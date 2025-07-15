@@ -119,5 +119,5 @@ elif st.session_state.slide_anorganik == "game":
         st.markdown(f"**Soal {st.session_state.index_soal_anorganik + 1} dari {len(st.session_state.random_soal_anorganik)}**")
         st.info(soal["pertanyaan"])
 
-        opsi_label = ['A', 'B', 'C', 'D']
-        opsi_dict = {f"{label}. {text}": text for label, text in zip(opsi_label
+       opsi_label = ['A', 'B', 'C', 'D']
+opsi_dict = {f"{label}. {text}": text for label, text in zip(opsi_label, soal["opsi"])}
