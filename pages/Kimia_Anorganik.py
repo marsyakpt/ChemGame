@@ -32,7 +32,7 @@ if st.session_state.slide_anorganik == "menu":
     - 📖 *Baca Materi dulu* — pelajari reaksi dan penjelasannya dari awal  
     - 🎮 *Langsung ke Quis* — uji kemampuanmu dan lihat seberapa cepat kamu bisa mengenali senyawa!
     
-    Tenang aja, mau mulai dari mana pun, CHiQ tetap siap jadi partner belajarmu 😄✨
+    Tenang aja, mau mulai dari mana pun, CHIQ tetap siap jadi partner belajarmu 😄✨
     """)
 
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
@@ -57,18 +57,18 @@ elif st.session_state.slide_anorganik == "materi":
         Ini bukan sulap. Ini **Kimia Anorganik**.  
         Dunia reaksi visual tempat ion-ion bereaksi, logam bicara lewat nyala, dan larutan berubah jadi petunjuk tersembunyi.
 
-        CHiQ gak ngajak kamu hafalan.  
-        CHiQ ngajak kamu kenali karakter senyawa lewat warna, perubahan, dan interaksi yang bisa kamu lihat langsung.
+        CHIQ gak ngajak kamu hafalan.  
+        CHIQ ngajak kamu kenali karakter senyawa lewat warna, perubahan, dan interaksi yang bisa kamu lihat langsung.
 
         ### Jadi, kamu mau mulai eksplorasi dari mana dulu?
 
         🔥 Api yang bicara melalui warna logam?  
         🧪 Larutan bening yang diam-diam punya reaksi mengejutkan?
 
-        💬 *Di CHiQ, setiap reaksi adalah kisah—dan kamu adalah pembaca warna, pola, dan clue-nya.* ⚡✨
+        💬 *Di CHIQ, setiap reaksi adalah kisah—dan kamu adalah pembaca warna, pola, dan clue-nya.* ⚡✨
         """)
 
-        st.markdown("### 📚 Pilih Topik Materimu 📚:")
+        st.markdown("### 📚 Pilih Topik Materimu 📚")
         st.button("🔥 Uji Nyala", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "uji_nyala"}))
         st.button("🧪 Uji Kualitatif Senyawa", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "uji_kualitatif"}))
         st.markdown("---")
