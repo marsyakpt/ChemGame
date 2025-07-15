@@ -147,6 +147,6 @@ elif st.session_state.slide_organik == "game":
                 st.rerun()
 
        if not st.session_state.selesai:
-        st.markdown("---")
-        st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
+           st.markdown("---")
+           st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
 
