@@ -18,12 +18,68 @@ if st.session_state.slide_organik == "menu":
 # Halaman Materi
 elif st.session_state.slide_organik == "materi":
     st.subheader("📘 Materi Kimia Organik")
-    st.markdown("""
-    - Hidrokarbon: alkana, alkena, alkuna  
-    - Gugus fungsi: -OH, -COOH, -NH2  
-    - Reaksi: substitusi, adisi, eliminasi
-    """)
-    st.button("⬅️ Kembali", on_click=ke_slide, args=("menu",))
+
+    # Step 1: Cek apakah sudah pilih topik
+    if "materi_topik" not in st.session_state:
+        st.session_state.materi_topik = None
+
+    # Step 2: Kalau belum pilih topik, tampilkan daftar topik
+    if st.session_state.materi_topik is None:
+        st.write("Pilih topik materi:")
+        st.button("🛢️ Hidrokarbon", on_click=lambda: st.session_state.update({"materi_topik": "hidrokarbon"}))
+        st.button("🧪 Gugus Fungsi", on_click=lambda: st.session_state.update({"materi_topik": "gugus"}))
+        st.button("⚖️ Asam Basa", on_click=lambda: st.session_state.update({"materi_topik": "asam_basa"}))
+        st.button("🔁 Reaksi Organik", on_click=lambda: st.session_state.update({"materi_topik": "reaksi"}))
+        st.markdown("---")
+        st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
+
+    # Step 3: Kalau sudah pilih topik, tampilkan materinya
+    else:
+        topik = st.session_state.materi_topik
+
+        if topik == "hidrokarbon":
+            st.markdown("## 🛢️ Hidrokarbon")
+            st.markdown("""
+            - Alkana: ikatan tunggal  
+            - Alkena: ikatan rangkap dua  
+            - Alkuna: ikatan rangkap tiga  
+            - Contoh: metana, etena, asetilena
+            """)
+
+        elif topik == "gugus":
+            st.markdown("## 🧪 Gugus Fungsi")
+            st.markdown("""
+            - Alkohol (-OH)  
+            - Asam Karboksilat (-COOH)  
+            - Amin (-NH₂)  
+            - Aldehid (-CHO)  
+            - Ketona (C=O)
+            """)
+
+        elif topik == "asam_basa":
+            st.markdown("## ⚖️ Asam Basa dalam Organik")
+            st.markdown("""
+            - Asam organik: mengandung -COOH  
+            - Basa organik: mengandung -NH₂  
+            - Contoh asam: asam asetat  
+            - Contoh basa: metilamina  
+            - Reaksi netralisasi menghasilkan garam organik
+            """)
+
+        elif topik == "reaksi":
+            st.markdown("## 🔁 Reaksi Organik")
+            st.markdown("""
+            - Substitusi: atom digantikan oleh gugus lain  
+            - Adisi: penambahan atom/gugus ke ikatan rangkap  
+            - Eliminasi: penghilangan gugus dari molekul  
+            - Contoh: reaksi alkena dengan HBr
+            """)
+
+        # Tombol kembali ke daftar topik
+        st.markdown("---")
+        st.button("⬅️ Kembali ke Daftar Materi", on_click=lambda: st.session_state.update({"materi_topik": None}))
+        st.button("🏠 Kembali ke Menu", on_click=ke_slide, args=("menu",))
+
 
 # Halaman Game
 elif st.session_state.slide_organik == "game":
