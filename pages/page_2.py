@@ -119,5 +119,34 @@ elif st.session_state.slide_anorganik == "game":
         st.markdown(f"**Soal {st.session_state.index_soal_anorganik + 1} dari {len(st.session_state.random_soal_anorganik)}**")
         st.info(soal["pertanyaan"])
 
-       opsi_label = ['A', 'B', 'C', 'D']
-opsi_dict = {f"{label}. {text}": text for label, text in zip(opsi_label, soal["opsi"])}
+        opsi_label = ['A', 'B', 'C', 'D']
+        opsi_dict = {f"{label}. {text}": text for label, text in zip(opsi_label, soal["opsi"])}
+
+        jawaban_dipilih = st.radio("Pilih jawaban:", list(opsi_dict.keys()), key=f"radio_{st.session_state.index_soal_anorganik}")
+        jawaban = opsi_dict[jawaban_dipilih]
+
+        if st.button("✅ Cek Jawaban"):
+            st.session_state.tampilkan_penjelasan_anorganik = True
+            st.session_state.jawaban_dipilih_anorganik = jawaban
+            if jawaban == soal["jawaban"]:
+                st.session_state.skor_anorganik += soal["skor"]
+            st.rerun()
+
+        if st.session_state.tampilkan_penjelasan_anorganik:
+            if st.session_state.jawaban_dipilih_anorganik == soal["jawaban"]:
+                st.success(f"✅ Jawaban kamu BENAR! (+{soal['skor']} poin)")
+            else:
+                st.error(f"❌ Salah. Jawaban benar: **{soal['jawaban']}**")
+
+            st.info(f"💡 Penjelasan: {soal['penjelasan']}")
+
+            if st.button("➡️ Lanjut Soal"):
+                st.session_state.index_soal_anorganik += 1
+                st.session_state.jawaban_dipilih_anorganik = None
+                st.session_state.tampilkan_penjelasan_anorganik = False
+                if st.session_state.index_soal_anorganik >= len(st.session_state.random_soal_anorganik):
+                    st.session_state.selesai_anorganik = True
+                st.rerun()
+
+        st.markdown("---")
+        st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
