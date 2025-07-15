@@ -125,11 +125,25 @@ elif st.session_state.slide_anorganik == "game":
     st.markdown("---")
 
     all_soal_anorganik = [
-        {"pertanyaan": "Unsur golongan alkali tanah adalah?", "opsi": ["Na", "Mg", "Cl", "Fe"], "jawaban": "Mg", "penjelasan": "Golongan alkali tanah meliputi Be, Mg, Ca, dll.", "skor": 3},
-        {"pertanyaan": "Asam sulfat memiliki rumus kimia?", "opsi": ["HCl", "HNO₃", "H₂SO₄", "H₂CO₃"], "jawaban": "H₂SO₄", "penjelasan": "H₂SO₄ adalah nama lain dari asam sulfat.", "skor": 4},
-        {"pertanyaan": "Fe³⁺ + e⁻ → Fe²⁺ adalah proses?", "opsi": ["Oksidasi", "Reduksi", "Netralisasi", "Ionisasi"], "jawaban": "Reduksi", "penjelasan": "Reduksi adalah penerimaan elektron.", "skor": 2},
-        {"pertanyaan": "Kompleks [Cu(NH₃)₄]²⁺ berwarna?", "opsi": ["Biru", "Merah", "Hijau", "Kuning"], "jawaban": "Biru", "penjelasan": "Ion kompleks Cu²⁺ + NH₃ menghasilkan warna biru.", "skor": 3},
-        {"pertanyaan": "Sifat logam yang paling umum adalah?", "opsi": ["Mudah larut", "Mudah terbakar", "Mengkilap", "Tidak reaktif"], "jawaban": "Mengkilap", "penjelasan": "Logam biasanya punya permukaan mengkilap.", "skor": 2},
+        {"pertanyaan": "Ion berikut yang menghasilkan endapan putih saat di tetesi AgNO₃ adalah?", "opsi": ["NO₃⁻", "Cl⁻", "SO₄²⁻", "CO₃²⁻"], "jawaban": "Cl⁻", "penjelasan": "Golongan alkali tanah meliputi Be, Mg, Ca, dll.", "skor": 3},
+        {"pertanyaan": "Ion yang menghasilkan warna nyala kuning terang adalah?", "opsi": ["K⁺", "Li⁺", "Na⁺", "Ba²⁺"], "jawaban": "Na⁺", "penjelasan": "H₂SO₄ adalah nama lain dari asam sulfat.", "skor": 4},
+        {"pertanyaan": "Endapan putih yang tidak larut dalam asam nitrat pekat terbentuk ketika ion SO₄²⁻ direaksikan dengan...", "opsi": ["AgNO₃", "BaCl₂", "NaOH", "HCl"], "jawaban": "BaCl₂", "penjelasan": "Reduksi adalah penerimaan elektron.", "skor": 2},
+        {"pertanyaan": "Reaksi cincin coklat pada uji anion menandakan keberadaan?", "opsi": ["Cl⁻", "PO₄³⁻", "NO₃⁻", "CO₃²⁻"], "jawaban": "NO₃⁻", "penjelasan": "Ion kompleks Cu²⁺ + NH₃ menghasilkan warna biru.", "skor": 3},
+        {"pertanyaan": "Kation berikut yang membentuk larutan biru tua dengan NH₄OH adalah?", "opsi": ["Fe³⁺", "Cu²⁺", "Pb²⁺", "Al³⁺"], "jawaban": "Cu²⁺", "penjelasan": "Logam biasanya punya permukaan mengkilap.", "skor": 2},
+        {"pertanyaan": "Ion yang memberikan endapan hitam dengan H₂S dalam suasana asam adalah?", "opsi": ["Na⁺", "Cu²⁺", "Ca²⁺", "K⁺"], "jawaban": "Cu²⁺", "penjelasan": "Golongan alkali tanah meliputi Be, Mg, Ca, dll.", "skor": 3},
+        {"pertanyaan": "Warna nyala ungu pucat dihasilkan oleh ion?", "opsi": ["K⁺", "Li⁺", "Ca²⁺", "Ba²⁺"], "jawaban": "K⁺", "penjelasan": "H₂SO₄ adalah nama lain dari asam sulfat.", "skor": 4},
+        {"pertanyaan": "Uji kualitatif digunakan untuk...", "opsi": ["Menentukan konsentrasi", "Menentukan berat molekul", "Mengidentifikasi jenis ion", "Menentukan titik didih"], "jawaban": "Mengidentifikasi jenis ion", "penjelasan": "Penjelasan menyusul...", "skor": 3},
+        {"pertanyaan": "Ion yang diuji dengan HCl menghasilkan gas yang membuat air kapur menjadi keruh adalah...", "opsi": ["PO₄³⁻", "CO₃²⁻", "SO₄²⁻", "Cl⁻"], "jawaban": "CO₃²⁻", "penjelasan": "Penjelasan menyusul...", "skor": 4},
+        {"pertanyaan": "Ion Cl⁻ diuji dengan AgNO₃ menghasilkan endapan...", "opsi": ["Kuning", "Hitam", "Putih", "Coklat"], "jawaban": "Putih", "penjelasan": "Penjelasan menyusul...", "skor": 3},
+        {"pertanyaan": "Uji nyala hijau kekuningan menunjukkan keberadaan ion...", "opsi": ["Ba²⁺", "Cu²⁺", "K⁺", "Ca²⁺"], "jawaban": "Ba²⁺", "penjelasan": "Penjelasan menyusul...", "skor": 4},
+        {"pertanyaan": "Kelompok ion yang tidak menghasilkan endapan dengan reagen umum adalah...", "opsi": ["Golongan I", "Golongan II", "Golongan V", "Golongan III"], "jawaban": "Golongan V", "penjelasan": "Penjelasan menyusul...", "skor": 3},
+        {"pertanyaan": "Ion berikut yang termasuk golongan III kation adalah...", "opsi": ["Ag⁺", "Cu²⁺", "Fe³⁺", "Ba²⁺"], "jawaban": "Fe³⁺", "penjelasan": "Penjelasan menyusul...", "skor": 4},
+        {"pertanyaan": "Ion berikut yang tergolong dalam anion adalah...", "opsi": ["Fe³⁺", "K⁺", "Cl⁻", "NH₄⁺"], "jawaban": "Cl⁻", "penjelasan": "Penjelasan menyusul...", "skor": 2},
+        {"pertanyaan": "Warna nyala merah karmin dihasilkan oleh ion...", "opsi": ["Li⁺", "Ca²⁺", "Na⁺", "K⁺"], "jawaban": "Li⁺", "penjelasan": "Penjelasan menyusul...", "skor": 3},
+        {"pertanyaan": "Reagen yang digunakan untuk menguji PO₄³⁻ adalah...", "opsi": ["HCl", "AgNO₃", "Amonium molibdat", "BaCl₂"], "jawaban": "Amonium molibdat", "penjelasan": "Penjelasan menyusul...", "skor": 4},
+        {"pertanyaan": "Gas CO₂ dari reaksi HCl dan ion karbonat terdeteksi dengan cara...", "opsi": ["Diuji nyala", "Uji bau", "Dilarutkan air kapur", "Disaring"], "jawaban": "Dilarutkan air kapur", "penjelasan": "Penjelasan menyusul...", "skor": 3},
+        {"pertanyaan": "Ion yang diuji dengan KSCN dan memberikan warna merah darah adalah...", "opsi": ["Cu²⁺", "Fe³⁺", "Al³⁺", "Zn²⁺"], "jawaban": "Fe³⁺", "penjelasan": "Penjelasan menyusul...", "skor": 5},
+        {"pertanyaan": "Salah satu reagen yang digunakan dalam pengelompokan kation adalah...", "opsi": ["H₂O", "NH₄OH", "NaCl", "H₂O₂"], "jawaban": "NH₄OH", "penjelasan": "Penjelasan menyusul...", "skor": 3},
     ]
 
     if "leaderboard_anorganik" not in st.session_state:
