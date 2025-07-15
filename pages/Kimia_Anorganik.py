@@ -20,7 +20,6 @@ if st.session_state.slide_anorganik == "menu":
 # --------------------- MATERI ---------------------
 elif st.session_state.slide_anorganik == "materi":
     st.subheader("📘 Materi Kimia Anorganik")
-    st.markdown("## ⚗️ Praktikum Digital CHIQ")
     
     if "materi_topik_anorganik" not in st.session_state:
         st.session_state.materi_topik_anorganik = None
