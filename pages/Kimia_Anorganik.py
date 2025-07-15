@@ -46,27 +46,28 @@ elif st.session_state.slide_anorganik == "materi":
         st.session_state.materi_topik_anorganik = None
 
     if st.session_state.materi_topik_anorganik is None:
-        
+        st.markdown("## ⚗️ Cabang Kimia yang Bikin Warna Bicara dan Endapan Menjawab!")
+
         st.markdown("""
-        Pernah lihat nyala api tiba-tiba berubah warna saat logam dipanaskan?  
-        Atau larutan bening yang mendadak membentuk endapan putih mirip kabut kecil?
+        Bayangkan kamu sedang berdiri di depan meja lab—lampu neon menggantung tenang, bunsen menyala biru, dan tabung reaksi siap diisi.  
+        Kamu panaskan sebatang logam... dan *cling!* api berubah jadi warna hijau kebiruan yang misterius.
 
-        Itu bukan efek visual—itu **reaksi nyata dari senyawa anorganik** yang ada di sekeliling kita!
+        Tak lama, kamu teteskan larutan bening ke reagen.  
+        Diam-diam, muncul kabut putih halus yang melayang pelan dalam gelas kimia.
 
-        Di Kimia Anorganik, setiap warna, busa, dan perubahan larutan punya makna.  
-        Logam bicara lewat api, dan ion bereaksi lewat transformasi dramatis dalam tabung uji.
+        Ini bukan sulap. Ini **Kimia Anorganik**.  
+        Dunia reaksi visual tempat ion-ion bereaksi, logam bicara lewat nyala, dan larutan berubah jadi petunjuk tersembunyi.
 
-        CHiQ bakal ajak kamu menyelami sisi paling visual dan logis dari dunia kimia.  
-        Kamu gak akan disuruh hafal—tapi diajak mengamati, memahami, dan *decode* pola dari reaksi yang bisa kamu lihat langsung.
+        CHiQ gak ngajak kamu hafalan.  
+        CHiQ ngajak kamu kenali karakter senyawa lewat warna, perubahan, dan interaksi yang bisa kamu lihat langsung.
 
         ---
-        ### 🎯 Jadi... kamu mau mulai dari mana dulu?
+        ### 🎯 Jadi, kamu mau mulai eksplorasi dari mana dulu?
 
-        Pikirkan:  
-        Mau mengurai cahaya warna-warni dari nyala logam?  
-        Atau membongkar misteri larutan yang tiba-tiba berubah saat ditetesin reagen?
+        🔥 Api yang bicara melalui warna logam?  
+        🧪 Larutan bening yang diam-diam punya reaksi mengejutkan?
 
-        💬 *CHiQ percaya: belajar kimia itu bukan soal urutan, tapi soal rasa ingin tahu yang bikin reaksi dalam kepala ikut menyala.* ⚡✨
+        💬 *Di CHiQ, setiap reaksi adalah kisah—dan kamu adalah pembaca warna, pola, dan clue-nya.* ⚡✨
         """)
 
         st.markdown("### 📚 Pilih Topik Materimu:")
@@ -82,7 +83,7 @@ elif st.session_state.slide_anorganik == "materi":
             st.markdown("## 🔥 Uji Nyala")
             st.markdown("""
             Warna api bisa mengungkap identitas logam di balik senyawa!  
-            Saat logam dipanaskan, elektronnya loncat energi dan memancarkan cahaya khas.
+            Saat dipanaskan, elektron logam naik energi dan memancarkan cahaya khas saat kembali.
 
             | Logam           | Warna Nyala           |
             |----------------|------------------------|
@@ -94,28 +95,29 @@ elif st.session_state.slide_anorganik == "materi":
             | Barium (Ba²⁺)   | Hijau apel 🍏           |
             | Strontium (Sr²⁺)| Merah terang 🔥         |
 
-            🔍 *Semua warna itu bukan sulap—tapi hasil transisi elektron yang kece!*
+            🔍 *Warna-warna ini bukan dekorasi, tapi tanda "bahasa cahaya" dari logam-logam laboratorium!*
             """)
 
         elif topik == "uji_kualitatif":
             st.markdown("## 🧪 Uji Kualitatif Senyawa Anorganik")
             st.markdown("""
-            Ion-ion di larutan bisa terdeteksi lewat perubahan fisik: munculnya endapan, perubahan warna, atau bahkan gas.
+            Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
 
             | Reagen + Ion               | Hasil Reaksi                |
             |----------------------------|------------------------------|
             | Ag⁺ + Cl⁻                  | Endapan putih (AgCl) ⚪       |
-            | Fe³⁺ + SCN⁻                | Warna merah darah 🔴         |
+            | Fe³⁺ + SCN⁻                | Larutan merah darah 🔴        |
             | Ba²⁺ + SO₄²⁻               | Endapan putih (BaSO₄) ⚪      |
             | Cu²⁺ + NH₃ (amonia)        | Larutan biru kompleks 💙     |
             | Pb²⁺ + I⁻                  | Endapan kuning (PbI₂) 💛     |
 
-            🔬 *Reaksi ini bukan cuma uji lab, tapi cara ion “menunjukkan identitasnya”!*
+            🧪 *CHiQ bakal bantu kamu baca sinyal dari reaksi-reaksi ini seperti detektif kimia.* 🔬✨
             """)
 
         st.markdown("---")
         st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik_anorganik": None}))
         st.button("🏠 Menu", on_click=ke_slide, args=("menu",))
+
 
 
 # ---------------------- GAME ----------------------
