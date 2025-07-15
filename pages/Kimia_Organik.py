@@ -13,7 +13,7 @@ def ke_slide(nama):
 
 # ---------------------- MENU ----------------------
 if st.session_state.slide_organik == "menu":
-    st.markdown("## 🧪 Cabang Kimia yang Bikin Hidup Lebih… Karbon!")
+    st.markdown("### 🧪 Cabang Kimia yang Bikin Hidup Lebih… Karbon!")
 
     st.markdown("""
     Pernah mikir kenapa parfum bisa wangi? Atau kenapa mie instan butuh minyak?  
