@@ -174,17 +174,21 @@ elif st.session_state.slide_organik == "game":
         with col3:
             st.button("🏠 Kembali ke Menu", on_click=ke_slide, args=("menu",))
 
-    else:
-        soal = st.session_state.random_soal[st.session_state.index_soal]
-        st.markdown(f"**Soal {st.session_state.index_soal + 1} dari {len(st.session_state.random_soal)}**")
-        st.info(soal["pertanyaan"])
+       if st.button("✅ Cek Jawaban"):
+        if jawaban == soal["jawaban"]:
+            st.success(f"✅ Jawaban kamu BENAR! (+{soal['skor']} poin)")
+            st.session_state.skor += soal["skor"]
+        else:
+            st.error(f"❌ Salah! Jawaban yang benar: **{soal['jawaban']}** (+0 poin)")
 
-        opsi_label = ['A', 'B', 'C', 'D']
-        opsi_dict = {f"{label}. {teks}": teks for label, teks in zip(opsi_label, soal["opsi"])}
-        jawaban_pilihan = st.radio("Pilih jawaban kamu:", list(opsi_dict.keys()), key=st.session_state.index_soal)
-        jawaban = opsi_dict[jawaban_pilihan]
+        st.info(f"💡 Penjelasan: {soal['penjelasan']}")
 
-        if st.button("✅ Cek Jawaban"):
+        st.session_state.index_soal += 1
+        if st.session_state.index_soal >= len(st.session_state.random_soal):
+            st.session_state.selesai = True
+
+        st.rerun()
+
             if jawaban == soal["jawaban"]:
                 st.success(f"Jawaban kamu BENAR! (+{soal['skor']} poin)")
                 st.session_state.skor += soal["skor"]
