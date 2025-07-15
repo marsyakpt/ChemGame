@@ -87,46 +87,63 @@ elif st.session_state.slide_organik == "game":
     st.markdown("---")
 
     all_soal = [
-        {"pertanyaan": "Apa gugus fungsi dari alkohol?", "opsi": ["-COOH", "-NH2", "-OH", "-CHO"], "jawaban": "-OH"},
-        {"pertanyaan": "Gugus fungsi dari asam karboksilat adalah?", "opsi": ["-OH", "-COOH", "-NH2", "-C=O"], "jawaban": "-COOH"},
-        {"pertanyaan": "Apa jenis reaksi alkena dengan HBr?", "opsi": ["Substitusi", "Eliminasi", "Adisi", "Polimerisasi"], "jawaban": "Adisi"},
-        {"pertanyaan": "Alkana memiliki ikatan apa?", "opsi": ["Tunggal", "Rangkap dua", "Rangkap tiga", "Aromatik"], "jawaban": "Tunggal"},
-        {"pertanyaan": "Etanol adalah contoh dari?", "opsi": ["Eter", "Aldehid", "Alkohol", "Alkana"], "jawaban": "Alkohol"},
+        {
+            "pertanyaan": "Apa gugus fungsi dari alkohol?",
+            "opsi": ["-COOH", "-NH2", "-OH", "-CHO"],
+            "jawaban": "-OH",
+            "penjelasan": "Alkohol memiliki gugus fungsi -OH (hidroksil).",
+            "skor": 3
+        },
+        {
+            "pertanyaan": "Gugus fungsi dari asam karboksilat adalah?",
+            "opsi": ["-OH", "-COOH", "-NH2", "-C=O"],
+            "jawaban": "-COOH",
+            "penjelasan": "Asam karboksilat memiliki gugus -COOH yang bersifat asam.",
+            "skor": 5
+        },
+        {
+            "pertanyaan": "Apa jenis reaksi alkena dengan HBr?",
+            "opsi": ["Substitusi", "Eliminasi", "Adisi", "Polimerisasi"],
+            "jawaban": "Adisi",
+            "penjelasan": "Alkena bereaksi dengan HBr melalui mekanisme adisi karena ikatan rangkap.",
+            "skor": 2
+        }
     ]
 
     if "leaderboard" not in st.session_state:
         st.session_state.leaderboard = []
 
-    if "player_name" not in st.session_state or not st.session_state.player_name:
-        nama = st.text_input("Masukkan nama kamu dulu ya! 👇")
-        if nama:
-            st.session_state.player_name = nama
-            st.rerun()
+    if "player_name" not in st.session_state:
+        st.session_state.player_name = ""
+
+    if not st.session_state.player_name:
+        st.session_state.player_name = st.text_input("Masukkan nama kamu dulu ya! 👇")
+        if st.session_state.player_name:
+            st.experimental_rerun()
         else:
             st.stop()
 
     if "random_soal" not in st.session_state:
         import random
-        st.session_state.random_soal = random.sample(all_soal, 3)
+        st.session_state.random_soal = random.sample(all_soal, len(all_soal))
         st.session_state.index_soal = 0
         st.session_state.skor = 0
         st.session_state.selesai = False
 
     if st.session_state.selesai:
+        total_maks = sum(soal["skor"] for soal in st.session_state.random_soal)
         st.balloons()
-        st.success(f"🎉 {st.session_state.player_name}, skor akhir kamu: {st.session_state.skor} dari {len(st.session_state.random_soal)}")
+        st.success(f"🎉 {st.session_state.player_name}, skor akhir kamu: {st.session_state.skor} dari {total_maks} poin!")
 
         st.session_state.leaderboard.append(
             {"nama": st.session_state.player_name, "skor": st.session_state.skor}
         )
 
-        st.markdown("---")
         st.markdown("### 🏆 Leaderboard Sementara")
-        sorted_leaderboard = sorted(st.session_state.leaderboard, key=lambda x: x["skor"], reverse=True)
-        for i, entry in enumerate(sorted_leaderboard[:5]):
+        leaderboard = sorted(st.session_state.leaderboard, key=lambda x: x["skor"], reverse=True)
+        for i, entry in enumerate(leaderboard[:5]):
             st.write(f"{i+1}. **{entry['nama']}** - {entry['skor']} poin")
 
-        st.markdown("---")
         col1, col2, col3 = st.columns(3)
         with col1:
             if st.button("🔁 Ulang Game"):
@@ -134,7 +151,7 @@ elif st.session_state.slide_organik == "game":
                 del st.session_state.index_soal
                 del st.session_state.skor
                 del st.session_state.selesai
-                st.rerun()
+                st.experimental_rerun()
         with col2:
             st.button("📚 Kembali ke Materi", on_click=ke_slide, args=("materi",))
         with col3:
@@ -144,20 +161,27 @@ elif st.session_state.slide_organik == "game":
         soal = st.session_state.random_soal[st.session_state.index_soal]
         st.markdown(f"**Soal {st.session_state.index_soal + 1} dari {len(st.session_state.random_soal)}**")
         st.info(soal["pertanyaan"])
-        jawaban = st.radio("Pilih jawaban kamu:", soal["opsi"], key="jawaban")
+
+        opsi_label = ['A', 'B', 'C', 'D']
+        opsi_dict = {f"{label}. {teks}": teks for label, teks in zip(opsi_label, soal["opsi"])}
+        jawaban_dipilih = st.radio("Pilih jawaban kamu:", list(opsi_dict.keys()), key=st.session_state.index_soal)
+        jawaban = opsi_dict[jawaban_dipilih]
 
         if st.button("✅ Cek Jawaban"):
             if jawaban == soal["jawaban"]:
-                st.success("Jawaban kamu BENAR! 👍")
-                st.session_state.skor += 1
+                st.success(f"Jawaban kamu BENAR! 👍 (+{soal['skor']} poin)")
+                st.session_state.skor += soal["skor"]
             else:
-                st.error(f"Jawaban SALAH. Jawaban yang benar adalah **{soal['jawaban']}**.")
+                st.error(f"Salah 😢 Jawaban yang benar: **{soal['jawaban']}** (+0 poin)")
+
+            st.info(f"💡 Penjelasan: {soal['penjelasan']}")
 
             st.session_state.index_soal += 1
             if st.session_state.index_soal >= len(st.session_state.random_soal):
                 st.session_state.selesai = True
 
-            st.rerun()
+            st.experimental_rerun()
 
     st.markdown("---")
     st.button("⬅️ Kembali", on_click=ke_slide, args=("menu",))
+
