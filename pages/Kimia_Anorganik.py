@@ -15,7 +15,7 @@ def ke_slide(nama):
 if st.session_state.slide_anorganik == "menu":
 
     st.markdown("""
-    “Pernah lihat nyala api berwarna hijau di laboratorium? Atau larutan yang tiba-tiba mengendap saat ditetesin reagen?”  
+    Pernah lihat nyala api berwarna hijau di laboratorium? Atau larutan yang tiba-tiba mengendap saat ditetesin reagen?  
     Itu bukan sulap, tapi reaksi khas dari senyawa anorganik yang ada di sekeliling kita.
 
     Kimia Anorganik adalah cabang kimia yang mempelajari unsur dan senyawa non-karbon—mulai dari garam dapur, logam-logam, larutan asam basa, sampai ion-ion misterius yang biasa muncul di laboratorium.
@@ -23,7 +23,7 @@ if st.session_state.slide_anorganik == "menu":
     Misalnya, ion natrium bisa menghasilkan **nyala api kuning terang**, sedangkan ion tembaga menghadirkan warna **biru kehijauan yang khas**.  
     Reaksi antara ion klorida dan perak dapat membentuk **endapan putih mirip kabut halus**.
 
-    Lewat penjelasan singkat dan kuis seru, CHiQ bantu kamu mengenali karakter senyawa anorganik dengan gaya belajar yang santai dan logis.
+    Lewat penjelasan singkat dan kuis seru, CHIQ bantu kamu mengenali karakter senyawa anorganik dengan gaya belajar yang santai.
     """)
 
     st.markdown("### 🎯 Jadi kamu mau pilih yang mana nih?")
@@ -34,7 +34,6 @@ if st.session_state.slide_anorganik == "menu":
     Tenang aja, mau mulai dari mana pun, CHiQ tetap siap jadi partner belajarmu 😄✨
     """)
 
-    st.markdown("---")
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
     st.button("🎮 Game", on_click=ke_slide, args=("game",))
 
