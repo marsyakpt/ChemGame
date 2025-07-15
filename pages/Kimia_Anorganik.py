@@ -13,7 +13,6 @@ def ke_slide(nama):
 
 # ---------------------- MENU ----------------------
 if st.session_state.slide_anorganik == "menu":
-    st.markdown("## ⚗️ Kimia Anorganik")
 
     st.markdown("""
     “Pernah lihat nyala api berwarna hijau di laboratorium? Atau larutan yang tiba-tiba mengendap saat ditetesin reagen?”  
