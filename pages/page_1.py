@@ -99,7 +99,7 @@ elif st.session_state.slide_organik == "game":
         st.info(soal["pertanyaan"])
         jawaban = st.radio("Pilih jawaban kamu:", soal["opsi"], key="jawaban")
 
-        if st.button("✅ Cek Jawaban"):
+               if st.button("✅ Cek Jawaban"):
             if jawaban == soal["jawaban"]:
                 st.success("Jawaban kamu BENAR! 👍")
                 st.session_state.skor += 1
@@ -111,9 +111,8 @@ elif st.session_state.slide_organik == "game":
             if st.session_state.index_soal >= len(st.session_state.random_soal):
                 st.session_state.selesai = True
 
-            # Reset jawaban biar radio gak stuck
-            st.session_state["jawaban"] = None
             st.experimental_rerun()
+
 
     st.markdown("---")
     st.button("⬅️ Kembali", on_click=ke_slide, args=("menu",))
