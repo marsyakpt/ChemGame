@@ -69,7 +69,7 @@ elif st.session_state.slide_organik == "materi":
         🎓 *Belajar di CHiQ gak harus urut—pilih topik yang paling bikin kamu kepo duluan, dan biarkan rasa penasaranmu nuntun ke insight kimia yang gak terduga!* ⚗️✨
         """)
 
-        st.markdown("### 📚 Pilih Topik Materimu:")
+        st.markdown("### 📚 Pilih Topik Materimu 📚")
         st.button("🔥 Hidrokarbon", on_click=lambda: st.session_state.update({"materi_topik_organik": "hidrokarbon"}))
         st.button("🍷 Alkohol, Fenol, Eter", on_click=lambda: st.session_state.update({"materi_topik_organik": "alkohol"}))
         st.button("🍋 Aldehid & Keton", on_click=lambda: st.session_state.update({"materi_topik_organik": "aldehid_keton"}))
