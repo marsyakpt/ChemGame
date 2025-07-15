@@ -35,7 +35,7 @@ if st.session_state.slide_anorganik == "menu":
     """)
 
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
-    st.button("🎮 Game", on_click=ke_slide, args=("game",))
+    st.button("🎮 Quis", on_click=ke_slide, args=("game",))
 
 
 # --------------------- MATERI ---------------------
