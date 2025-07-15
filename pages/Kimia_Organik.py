@@ -47,7 +47,47 @@ if st.session_state.slide_organik == "menu":
 
 
 # --------------------- MATERI ---------------------
-v
+elif st.session_state.slide_organik == "materi":
+
+    if "materi_topik_organik" not in st.session_state:
+        st.session_state.materi_topik_organik = None
+
+    if st.session_state.materi_topik_organik is None:
+        # ⬇️ Narasi HANYA ditampilkan saat belum pilih topik
+        st.markdown("""
+        Bayangin kamu lagi megang parfum favorit, nyemil donat, atau cuci tangan pakai sabun wangi...  
+        Tanpa kamu sadari, kamu sedang berinteraksi langsung dengan dunia **Kimia Organik**!
+
+        Dari molekul kecil seperti **hidrokarbon** yang bikin bahan bakar menyala,  
+        sampai struktur kompleks seperti **protein** yang menyusun tubuhmu—semuanya berbasis **karbon**, dan semuanya punya cerita.
+
+        Di halaman ini, CHiQ bakal ajak kamu eksplor berbagai jenis senyawa organik:  
+        ada yang aromanya khas, ada yang sifatnya unik, dan ada yang jadi bagian penting dalam hidup kita sehari-hari.
+
+        Kamu bebas pilih jalur eksplorasimu.  
+        Mau mulai dari yang simpel kayak hidrokarbon, atau langsung loncat ke senyawa yang bikin mie instan gurih?
+
+        🎓 Belajar di CHiQ gak harus urut—pilih topik yang paling bikin kamu kepo duluan, dan biarkan rasa penasaranmu nuntun ke insight kimia yang gak terduga! ⚗️✨
+        """)
+
+        st.markdown("### 📚 Pilih Topik Materimu:")
+        # ⬇️ Tombol-tombol topik
+        st.button("🔥 Hidrokarbon", on_click=lambda: st.session_state.update({"materi_topik_organik": "hidrokarbon"}))
+        st.button("🍷 Alkohol, Fenol, Eter", on_click=lambda: st.session_state.update({"materi_topik_organik": "alkohol"}))
+        st.button("🍋 Aldehid & Keton", on_click=lambda: st.session_state.update({"materi_topik_organik": "aldehid_keton"}))
+        st.button("🧂 Asam Karboksilat & Derivat", on_click=lambda: st.session_state.update({"materi_topik_organik": "karboksilat"}))
+        st.button("🌿 Amina & Derivat", on_click=lambda: st.session_state.update({"materi_topik_organik": "amina"}))
+        st.button("🧴 Lemak & Minyak", on_click=lambda: st.session_state.update({"materi_topik_organik": "lemak"}))
+        st.button("🍞 Karbohidrat", on_click=lambda: st.session_state.update({"materi_topik_organik": "karbohidrat"}))
+        st.button("🥚 Protein", on_click=lambda: st.session_state.update({"materi_topik_organik": "protein"}))
+        st.markdown("---")
+        st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
+
+    else:
+        # ⬇️ Isi submateri tampil di sini (seperti sebelumnya)
+        topik = st.session_state.materi_topik_organik
+        # ... (daftar konten topik tetap)
+
 # ---------------------- GAME ----------------------
 elif st.session_state.slide_organik == "game":
     st.subheader("🎮 Game Kimia Organik")
