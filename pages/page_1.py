@@ -148,20 +148,31 @@ elif st.session_state.slide_organik == "game":
         jawaban_dipilih = st.radio("Pilih jawaban kamu:", list(opsi_dict.keys()), key=st.session_state.index_soal)
         jawaban = opsi_dict[jawaban_dipilih]
 
-        if st.button("✅ Cek Jawaban"):
-            if jawaban == soal["jawaban"]:
-                st.success(f"✅ Jawaban kamu BENAR! (+{soal['skor']} poin)")
-                st.session_state.skor += soal["skor"]
-            else:
-                st.error(f"❌ Jawaban SALAH! Jawaban benar: **{soal['jawaban']}** (+0 poin)")
+if "jawaban_cek" not in st.session_state:
+    st.session_state.jawaban_cek = False
 
-            st.info(f"💡 Penjelasan: {soal['penjelasan']}")
+if not st.session_state.jawaban_cek:
+    if st.button("✅ Cek Jawaban"):
+        st.session_state.jawaban_dipilih = jawaban
+        st.session_state.jawaban_cek = True
+        st.rerun()
+else:
+    jawaban = st.session_state.jawaban_dipilih
+    if jawaban == soal["jawaban"]:
+        st.success(f"✅ Jawaban kamu BENAR! (+{soal['skor']} poin)")
+        st.session_state.skor += soal["skor"]
+    else:
+        st.error(f"❌ Jawaban SALAH! Jawaban benar: **{soal['jawaban']}** (+0 poin)")
 
-            st.session_state.index_soal += 1
-            if st.session_state.index_soal >= len(st.session_state.random_soal):
-                st.session_state.selesai = True
+    st.info(f"💡 Penjelasan: {soal['penjelasan']}")
 
-            st.rerun()
+    if st.button("➡️ Lanjut Soal"):
+        st.session_state.index_soal += 1
+        st.session_state.jawaban_cek = False
+        if st.session_state.index_soal >= len(st.session_state.random_soal):
+            st.session_state.selesai = True
+        st.rerun()
+
 
     st.markdown("---")
     st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
