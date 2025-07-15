@@ -152,16 +152,17 @@ elif st.session_state.slide_anorganik == "game":
     if "player_name_anorganik" not in st.session_state:
         st.session_state.player_name_anorganik = ""
 
-    if not st.session_state.player_name:
+    if not st.session_state.player_name_anorganik:
         name = st.text_input("Masukkan nama kamu dulu ya! 👇")
         col_a, col_b = st.columns([2, 1])
         with col_a:
             if name:
-                st.session_state.player_name = name
+                st.session_state.player_name_anorganik = name
                 st.rerun()
         with col_b:
             st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
         st.stop()
+
 
     if "random_soal_anorganik" not in st.session_state:
         st.session_state.random_soal_anorganik = random.sample(all_soal_anorganik, len(all_soal_anorganik))
