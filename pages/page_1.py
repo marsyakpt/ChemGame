@@ -20,8 +20,8 @@ if st.session_state.slide_organik == "menu":
 elif st.session_state.slide_organik == "materi":
     st.subheader("📘 Materi Kimia Organik")
     st.markdown("""
-    - Hidrokarbon: alkana, alkena, alkuna
-    - Gugus fungsi: -OH, -COOH, -NH2
+    - Hidrokarbon: alkana, alkena, alkuna  
+    - Gugus fungsi: -OH, -COOH, -NH2  
     - Reaksi: substitusi, adisi, eliminasi
     """)
     st.button("⬅️ Kembali", on_click=ke_slide, args=("menu",))
@@ -99,7 +99,7 @@ elif st.session_state.slide_organik == "game":
         st.info(soal["pertanyaan"])
         jawaban = st.radio("Pilih jawaban kamu:", soal["opsi"], key="jawaban")
 
-               if st.button("✅ Cek Jawaban"):
+        if st.button("✅ Cek Jawaban"):
             if jawaban == soal["jawaban"]:
                 st.success("Jawaban kamu BENAR! 👍")
                 st.session_state.skor += 1
@@ -112,7 +112,6 @@ elif st.session_state.slide_organik == "game":
                 st.session_state.selesai = True
 
             st.experimental_rerun()
-
 
     st.markdown("---")
     st.button("⬅️ Kembali", on_click=ke_slide, args=("menu",))
