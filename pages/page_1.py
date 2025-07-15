@@ -109,8 +109,7 @@ elif st.session_state.slide_organik == "game":
         with col2:
             st.button("📚 Kembali ke Materi", on_click=ke_slide, args=("materi",))
         with col3:
-            if st.button("🏠 Kembali ke Menu Utama"):
-                st.session_state.slide_organik = None
+            st.button("🏠 Menu", on_click=ke_slide, args=("menu",))
 
     else:
         soal = st.session_state.random_soal[st.session_state.index_soal]
@@ -145,6 +144,6 @@ elif st.session_state.slide_organik == "game":
                 if st.session_state.index_soal >= len(st.session_state.random_soal):
                     st.session_state.selesai = True
                 st.rerun()
-        st.markdown("---")
-        st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
 
+    st.markdown("---")
+    st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
