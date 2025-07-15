@@ -41,41 +41,83 @@ if st.session_state.slide_anorganik == "menu":
 
 # --------------------- MATERI ---------------------
 elif st.session_state.slide_anorganik == "materi":
-    st.subheader("📘 Materi Kimia Anorganik")
-    
+
     if "materi_topik_anorganik" not in st.session_state:
         st.session_state.materi_topik_anorganik = None
 
     if st.session_state.materi_topik_anorganik is None:
-        st.write("Pilih topik materi:")
-        st.button("🔢 Tabel Periodik", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "periodik"}))
-        st.button("🔧 Sifat Logam & Non-Logam", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "sifat"}))
-        st.button("💧 Reaksi Asam Basa", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "asam_basa"}))
-        st.button("🔗 Senyawa Kompleks", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "kompleks"}))
-        st.button("🔥 Redoks", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "redoks"}))
+        st.markdown("## ⚗️ Cabang Kimia yang Bikin Warna Bicara dan Endapan Menjawab!")
+
+        st.markdown("""
+        Pernah lihat nyala api tiba-tiba berubah warna saat logam dipanaskan?  
+        Atau larutan bening yang mendadak membentuk endapan putih mirip kabut kecil?
+
+        Itu bukan efek visual—itu **reaksi nyata dari senyawa anorganik** yang ada di sekeliling kita!
+
+        Di Kimia Anorganik, setiap warna, busa, dan perubahan larutan punya makna.  
+        Logam bicara lewat api, dan ion bereaksi lewat transformasi dramatis dalam tabung uji.
+
+        CHiQ bakal ajak kamu menyelami sisi paling visual dan logis dari dunia kimia.  
+        Kamu gak akan disuruh hafal—tapi diajak mengamati, memahami, dan *decode* pola dari reaksi yang bisa kamu lihat langsung.
+
+        ---
+        ### 🎯 Jadi... kamu mau mulai dari mana dulu?
+
+        Pikirkan:  
+        Mau mengurai cahaya warna-warni dari nyala logam?  
+        Atau membongkar misteri larutan yang tiba-tiba berubah saat ditetesin reagen?
+
+        💬 *CHiQ percaya: belajar kimia itu bukan soal urutan, tapi soal rasa ingin tahu yang bikin reaksi dalam kepala ikut menyala.* ⚡✨
+        """)
+
+        st.markdown("### 📚 Pilih Topik Materimu:")
+        st.button("🔥 Uji Nyala", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "uji_nyala"}))
+        st.button("🧪 Uji Kualitatif Senyawa", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "uji_kualitatif"}))
         st.markdown("---")
         st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
+
     else:
         topik = st.session_state.materi_topik_anorganik
-        if topik == "periodik":
-            st.markdown("## 🔢 Tabel Periodik")
-            st.markdown("- Golongan & periode\n- Sifat periodik: jari-jari atom, energi ionisasi, keelektronegatifan")
-        elif topik == "sifat":
-            st.markdown("## 🔧 Sifat Logam & Non-Logam")
-            st.markdown("- Logam: konduktor, mengkilap, mudah ditempa\n- Non-logam: isolator, rapuh, tidak mengkilap")
-        elif topik == "asam_basa":
-            st.markdown("## 💧 Reaksi Asam Basa")
-            st.markdown("- Asam: donor proton (H⁺)\n- Basa: akseptor proton\n- Reaksi netralisasi: asam + basa → garam + air")
-        elif topik == "kompleks":
-            st.markdown("## 🔗 Senyawa Kompleks")
-            st.markdown("- Contoh: [Cu(NH₃)₄]²⁺\n- Sifat warna & bentuk geometris")
-        elif topik == "redoks":
-            st.markdown("## 🔥 Oksidasi-Reduksi")
-            st.markdown("- Oksidasi: pelepasan e⁻\n- Reduksi: penerimaan e⁻\n- Contoh: Fe³⁺ + e⁻ → Fe²⁺")
+
+        if topik == "uji_nyala":
+            st.markdown("## 🔥 Uji Nyala")
+            st.markdown("""
+            Warna api bisa mengungkap identitas logam di balik senyawa!  
+            Saat logam dipanaskan, elektronnya loncat energi dan memancarkan cahaya khas.
+
+            | Logam           | Warna Nyala           |
+            |----------------|------------------------|
+            | Natrium (Na⁺)   | Kuning terang 🍋        |
+            | Kalium (K⁺)     | Ungu muda 💜            |
+            | Kalsium (Ca²⁺)  | Jingga bata 🔶          |
+            | Tembaga (Cu²⁺)  | Hijau-biru 💚💙          |
+            | Lithium (Li⁺)   | Merah 🔴                |
+            | Barium (Ba²⁺)   | Hijau apel 🍏           |
+            | Strontium (Sr²⁺)| Merah terang 🔥         |
+
+            🔍 *Semua warna itu bukan sulap—tapi hasil transisi elektron yang kece!*
+            """)
+
+        elif topik == "uji_kualitatif":
+            st.markdown("## 🧪 Uji Kualitatif Senyawa Anorganik")
+            st.markdown("""
+            Ion-ion di larutan bisa terdeteksi lewat perubahan fisik: munculnya endapan, perubahan warna, atau bahkan gas.
+
+            | Reagen + Ion               | Hasil Reaksi                |
+            |----------------------------|------------------------------|
+            | Ag⁺ + Cl⁻                  | Endapan putih (AgCl) ⚪       |
+            | Fe³⁺ + SCN⁻                | Warna merah darah 🔴         |
+            | Ba²⁺ + SO₄²⁻               | Endapan putih (BaSO₄) ⚪      |
+            | Cu²⁺ + NH₃ (amonia)        | Larutan biru kompleks 💙     |
+            | Pb²⁺ + I⁻                  | Endapan kuning (PbI₂) 💛     |
+
+            🔬 *Reaksi ini bukan cuma uji lab, tapi cara ion “menunjukkan identitasnya”!*
+            """)
 
         st.markdown("---")
         st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik_anorganik": None}))
         st.button("🏠 Menu", on_click=ke_slide, args=("menu",))
+
 
 # ---------------------- GAME ----------------------
 elif st.session_state.slide_anorganik == "game":
