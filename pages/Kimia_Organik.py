@@ -53,7 +53,6 @@ elif st.session_state.slide_organik == "materi":
         st.session_state.materi_topik_organik = None
 
     if st.session_state.materi_topik_organik is None:
-        # ⬇️ Narasi HANYA ditampilkan saat belum pilih topik
         st.markdown("""
         Bayangin kamu lagi megang parfum favorit, nyemil donat, atau cuci tangan pakai sabun wangi...  
         Tanpa kamu sadari, kamu sedang berinteraksi langsung dengan dunia **Kimia Organik**!
@@ -71,7 +70,6 @@ elif st.session_state.slide_organik == "materi":
         """)
 
         st.markdown("### 📚 Pilih Topik Materimu:")
-        # ⬇️ Tombol-tombol topik
         st.button("🔥 Hidrokarbon", on_click=lambda: st.session_state.update({"materi_topik_organik": "hidrokarbon"}))
         st.button("🍷 Alkohol, Fenol, Eter", on_click=lambda: st.session_state.update({"materi_topik_organik": "alkohol"}))
         st.button("🍋 Aldehid & Keton", on_click=lambda: st.session_state.update({"materi_topik_organik": "aldehid_keton"}))
@@ -84,9 +82,118 @@ elif st.session_state.slide_organik == "materi":
         st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
 
     else:
-        # ⬇️ Isi submateri tampil di sini (seperti sebelumnya)
         topik = st.session_state.materi_topik_organik
-        # ... (daftar konten topik tetap)
+
+        if topik == "hidrokarbon":
+            st.markdown("## 🔥 Hidrokarbon")
+            st.markdown("""
+            Coba pikirkan bensin, gas LPG, atau lilin yang kamu nyalakan saat mati lampu—semuanya menyala karena senyawa hidrokarbon!  
+            Hidrokarbon cuma terdiri dari karbon dan hidrogen, tapi mereka punya energi besar yang menggerakkan dunia.
+
+            Jenisnya:
+            - Alkana (ikatan tunggal): metana, etana  
+            - Alkena (rangkap dua): etena, propena  
+            - Alkuna (rangkap tiga): etuna, butuna  
+            - Aromatik (cincin benzena): biasa di pewangi
+
+            🧠 *Fun fact:* Benzena itu aromatik yang literally... punya aroma 😆
+            """)
+
+        elif topik == "alkohol":
+            st.markdown("## 🍷 Alkohol, Fenol, Eter")
+            st.markdown("""
+            Alkohol punya gugus -OH yang bikin larut air dan reaktif. Fenol lebih asam dan sering dipakai di antiseptik.  
+            Eter? Senyawa dengan dua gugus alkil di kiri-kanan oksigen—stabil dan sering jadi pelarut.
+
+            Contoh:
+            - Etanol (hand sanitizer)  
+            - Fenol (desinfektan)  
+            - Dietil eter (anestesi)
+
+            🧠 *Fun fact:* Alkohol = bahan parfum yang aromanya nempel di baju berjam-jam!
+            """)
+
+        elif topik == "aldehid_keton":
+            st.markdown("## 🍋 Aldehid & Keton")
+            st.markdown("""
+            Gugus karbonil (C=O) jadi ciri khas mereka: aldehid di ujung, keton di tengah.  
+            Dipakai di parfum, pelarut, dan reaksi metabolik.
+
+            Contoh:
+            - Formaldehid (pengawet)  
+            - Aseton (penghapus kuteks!)
+
+            🧠 *Fun fact:* Aroma permen sintetis bisa berasal dari senyawa keton 🍬
+            """)
+
+        elif topik == "karboksilat":
+            st.markdown("## 🧂 Asam Karboksilat & Derivatnya")
+            st.markdown("""
+            Gugus -COOH bikin mereka asam.  
+            Turunannya bisa berupa ester (wangi), amida (protein), atau anhidrida (reaktif).
+
+            Contoh:
+            - Asam asetat (cuka)  
+            - Ester stroberi (hasil dari alkohol + asam!)
+
+            🧠 *Fun fact:* Sabun wangi itu hasil reaksi ester dari bahan kimia ini 😄
+            """)
+
+        elif topik == "amina":
+            st.markdown("## 🌿 Amina & Derivatnya")
+            st.markdown("""
+            Gugus -NH₂ bikin mereka bersifat basa.  
+            Amina terlibat dalam pewarna, protein, neurotransmitter, dan obat-obatan!
+
+            Contoh:
+            - Metilamina (amina primer)  
+            - Dopamin (neurotransmitter berbasis amina)
+
+            🧠 *Fun fact:* Tanpa amina, kamu gak bisa mikir—karena dopamin = amina!
+            """)
+
+        elif topik == "lemak":
+            st.markdown("## 🧴 Lemak & Minyak")
+            st.markdown("""
+            Lemak dan minyak adalah trigliserida—gabungan gliserol + 3 asam lemak.  
+            Lemak padat (mentega), minyak cair (zaitun), tapi sama-sama organik.
+
+            Reaksi saponifikasi? Yup, itu cara bikin sabun dari lemak + basa.
+
+            🧠 *Fun fact:* Sabun mandi kamu berasal dari reaksi lemak yang disulap jadi ester bersih 🧼
+            """)
+
+        elif topik == "karbohidrat":
+            st.markdown("## 🍞 Karbohidrat")
+            st.markdown("""
+            Karbohidrat adalah senyawa organik yang jadi sumber energi utama.  
+            Terdiri dari gula sederhana (glukosa) hingga rantai panjang (selulosa).
+
+            Contoh:
+            - Glukosa (gula darah)  
+            - Sukrosa (gula dapur)  
+            - Selulosa (dinding tumbuhan)
+
+            🧠 *Fun fact:* Gula bisa karamelisasi dan munculin aroma roti yang super bikin lapar 😋
+            """)
+
+        elif topik == "protein":
+            st.markdown("## 🥚 Protein")
+            st.markdown("""
+            Protein adalah polimer asam amino yang bikin enzim, otot, hormon, dan struktur tubuh.
+
+            Contoh:
+            - Hemoglobin: angkut oksigen  
+            - Kolagen: bikin kulit elastis  
+            - Insulin: regulasi gula
+
+            🧠 *Fun fact:* Telur yang berubah putih saat dimasak adalah protein yang berubah bentuk (denaturasi)!
+            """)
+
+        st.markdown("---")
+        st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik_organik": None}))
+        st.button("🏠 Menu", on_click=ke_slide, args=("menu",))
+
 
 # ---------------------- GAME ----------------------
 elif st.session_state.slide_organik == "game":
