@@ -20,6 +20,28 @@ if st.session_state.slide_anorganik == "menu":
 # --------------------- MATERI ---------------------
 elif st.session_state.slide_anorganik == "materi":
     st.subheader("📘 Materi Kimia Anorganik")
+    st.markdown("## ⚗️ Praktikum Digital CHiQ")
+
+st.markdown("""
+“Pernah lihat nyala api berwarna hijau di laboratorium? Atau larutan yang tiba-tiba mengendap saat ditetesin reagen?”  
+Di materi Kimia Anorganik CHiQ, kamu akan belajar mengenali senyawa anorganik lewat dua uji populer: 🔥 **Uji Nyala** dan 🧪 **Uji Kualitatif**.
+
+Materi disajikan dalam gaya praktikum digital: singkat, aplikatif, dan bikin kamu ngerasa kayak bantu dosen di lab! 😄
+""")
+
+st.markdown("### 📘 Materi yang Akan Kamu Pelajari:")
+st.markdown("""
+- 🔥 **Uji Nyala:** Kenali ion logam berdasarkan warna api. Contoh: Na⁺ → kuning, Cu²⁺ → biru kehijauan  
+- 🧪 **Uji Kualitatif:** Identifikasi ion lewat reaksi khas seperti endapan & perubahan warna. Contoh: Cl⁻ + Ag⁺ → endapan putih
+""")
+
+st.markdown("### 🎯 Jalur Belajar Kamu:")
+st.markdown("""
+Pilih salah satu:
+- 📖 *Baca Materi* — pelajari reaksi dan interpretasi  
+- 🎮 *Langsung ke Game* — uji seberapa cepat kamu mengenali senyawa
+""")
+
 
     if "materi_topik_anorganik" not in st.session_state:
         st.session_state.materi_topik_anorganik = None
