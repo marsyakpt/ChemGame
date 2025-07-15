@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="CHiQ | Home", page_icon="🧪")
 
 # Header
-st.title("Yo, welcome to CHiQ! 😎")
+st.title("Yo, welcome to CHIQ! 😎")
 st.subheader("Chemistry Interactive Quiz")
 
 # Narasi pembuka
