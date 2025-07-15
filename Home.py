@@ -5,5 +5,5 @@ st.title("🏠 Beranda")
 st.subheader("Selamat datang di Game & Materi Kimia! 🎉")
 st.write("Pilih halaman yang ingin kamu jelajahi:")
 
-st.page_link("pages/page_1.py", label="🔬 Kimia Organik")
-st.page_link("pages/page_2.py", label="⚗️ Kimia Anorganik")
+st.page_link("pages/Kimia_Organik.py", label="🔬 Kimia Organik")
+st.page_link("pages/Kimia_Anorganik.py", label="⚗️ Kimia Anorganik")
