@@ -22,7 +22,7 @@ if st.session_state.slide_organik == "menu":
    Kimia Organik adalah cabang kimia yang mempelajari senyawa berbasis karbon.  
     Mulai dari hidrokarbon sederhana, alkohol beraroma khas, ester pewangi, hingga molekul besar seperti karbohidrat dan protein yang jadi pondasi tubuh kita.
 
-   Di CHiQ, kamu akan diajak mengenali karakter senyawa ini lewat penjelasan ringan dan kuis seru—gak bikin pusing, tapi bikin penasaran!
+   Di CHIQ, kamu akan diajak mengenali karakter senyawa ini lewat penjelasan ringan dan kuis seru—gak bikin pusing, tapi bikin penasaran!
     """)
 
     st.markdown("### 💡 Contoh Reaksi Organik:")
@@ -60,7 +60,7 @@ elif st.session_state.slide_organik == "materi":
         Dari molekul kecil seperti **hidrokarbon** yang bikin bahan bakar menyala,  
         sampai struktur kompleks seperti **protein** yang menyusun tubuhmu—semuanya berbasis **karbon**, dan semuanya punya cerita.
 
-        Di halaman ini, CHiQ bakal ajak kamu eksplor berbagai jenis senyawa organik:  
+        Di halaman ini, CHIQ bakal ajak kamu eksplor berbagai jenis senyawa organik:  
         ada yang aromanya khas, ada yang sifatnya unik, dan ada yang jadi bagian penting dalam hidup kita sehari-hari.
 
         Kamu bebas pilih jalur eksplorasimu.  
