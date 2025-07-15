@@ -45,6 +45,8 @@ elif st.session_state.slide_anorganik == "materi":
     if "materi_topik_anorganik" not in st.session_state:
         st.session_state.materi_topik_anorganik = None
 
+    if st.session_state.materi_topik_anorganik is None:
+       
         st.markdown("""
         Bayangkan kamu sedang berdiri di depan meja lab—lampu neon menggantung tenang, bunsen menyala biru, dan tabung reaksi siap diisi.  
         Kamu panaskan sebatang logam... dan *cling!* api berubah jadi warna hijau kebiruan yang misterius.
@@ -114,6 +116,7 @@ elif st.session_state.slide_anorganik == "materi":
         st.markdown("---")
         st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik_anorganik": None}))
         st.button("🏠 Menu", on_click=ke_slide, args=("menu",))
+
 
 
 
