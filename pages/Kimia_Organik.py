@@ -13,9 +13,39 @@ def ke_slide(nama):
 
 # ---------------------- MENU ----------------------
 if st.session_state.slide_organik == "menu":
-    st.write("Silakan pilih:")
+    st.markdown("## 🧪 Kimia Organik")
+
+    st.markdown("""
+    Pernah mikir kenapa parfum bisa wangi? Atau kenapa mie instan butuh minyak?  
+    Jawabannya: semua itu senyawa organik!
+
+   Kimia Organik adalah cabang kimia yang mempelajari senyawa berbasis karbon.  
+    Mulai dari hidrokarbon sederhana, alkohol beraroma khas, ester pewangi, hingga molekul besar seperti karbohidrat dan protein yang jadi pondasi tubuh kita.
+
+   Di CHiQ, kamu akan diajak mengenali karakter senyawa ini lewat penjelasan ringan dan kuis seru—gak bikin pusing, tapi bikin penasaran!
+    """)
+
+    st.markdown("### 💡 Contoh Reaksi Organik:")
+    st.markdown("""
+    - Alkohol memiliki gugus -OH yang bikin larut air dan jadi bahan antiseptik  
+    - Senyawa ester punya aroma manis, cocok banget dipakai buat parfum dan pewangi  
+    - Karbohidrat & protein adalah molekul kompleks yang jadi sumber energi & pembentuk sel tubuh
+
+   Setiap senyawa punya cerita unik, dan CHiQ bantu kamu mengenalinya dengan pendekatan yang fun dan masuk akal 😄
+    """)
+
+    st.markdown("### 🎯 Jadi kamu mau mulai dari mana nih?")
+    st.markdown("""
+    - 📖 Pelajari dulu semua jenis senyawa dan karakteristiknya  
+    - 🎮 Atau langsung uji insting karbon-mu di kuis organik yang gak bikin ngantuk!
+
+   🧠 CHiQ percaya: belajar itu bukan soal cepat atau lambat—tapi soal nyantol di kepala dengan gaya yang relatable ✨
+    """)
+
+    st.markdown("---")
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
     st.button("🎮 Game", on_click=ke_slide, args=("game",))
+
 
 # --------------------- MATERI ---------------------
 elif st.session_state.slide_organik == "materi":
