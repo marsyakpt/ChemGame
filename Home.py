@@ -34,7 +34,7 @@ st.page_link("pages/Kimia_Anorganik.py", label="⚗️ Kimia Anorganik")
 
 # Bonus section
 st.markdown("---")
-st.markdown("# 💡 Fun Fact Kimia!")
+st.markdown("## 💡 Fun Fact Kimia!")
 
 st.markdown("""
 - 🍌 **Pisang itu sedikit radioaktif!** Karena mengandung isotop alami kalium-40. Tapi tenang, kamu gak akan glow in the dark 😆  
