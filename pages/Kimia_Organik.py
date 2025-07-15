@@ -201,13 +201,26 @@ elif st.session_state.slide_organik == "game":
     st.markdown("---")
 
     all_soal = [
-        {"pertanyaan": "Apa gugus fungsi dari alkohol?", "opsi": ["-COOH", "-NH2", "-OH", "-CHO"], "jawaban": "-OH", "penjelasan": "Alkohol memiliki gugus -OH.", "skor": 3},
-        {"pertanyaan": "Gugus fungsi dari asam karboksilat adalah?", "opsi": ["-OH", "-COOH", "-NH2", "-C=O"], "jawaban": "-COOH", "penjelasan": "Asam karboksilat memiliki -COOH.", "skor": 5},
-        {"pertanyaan": "Apa jenis reaksi alkena dengan HBr?", "opsi": ["Substitusi", "Eliminasi", "Adisi", "Polimerisasi"], "jawaban": "Adisi", "penjelasan": "Alkena + HBr adalah reaksi adisi.", "skor": 2},
-        {"pertanyaan": "Alkana memiliki ikatan apa?", "opsi": ["Tunggal", "Rangkap dua", "Rangkap tiga", "Aromatik"], "jawaban": "Tunggal", "penjelasan": "Alkana hanya punya ikatan tunggal.", "skor": 3},
-        {"pertanyaan": "Etanol termasuk?", "opsi": ["Eter", "Aldehid", "Alkohol", "Alkana"], "jawaban": "Alkohol", "penjelasan": "Etanol punya gugus -OH.", "skor": 4},
-        {"pertanyaan": "Apa nama CH₃COOH?", "opsi": ["Asam asetat", "Etanol", "Metanol", "Asam format"], "jawaban": "Asam asetat", "penjelasan": "CH₃COOH = Asam asetat", "skor": 3},
-        {"pertanyaan": "Benzena termasuk?", "opsi": ["Alkana", "Alkena", "Aromatik", "Aldehid"], "jawaban": "Aromatik", "penjelasan": "Benzena bersifat aromatik.", "skor": 4},
+        {"pertanyaan": "Uji Lucas digunakan untuk menguji senyawa...", "opsi": ["Aldehid", "Alkohol", "Karbohidrat", "Protein"], "jawaban": "Alkohol", "penjelasan": "Uji Lucas membedakan alkohol primer, sekunder, dan tersier.", "skor": 3},
+        {"pertanyaan": "Hasil uji Lucas yang cepat keruh menunjukkan alkohol...", "opsi": ["Primer", "Sekunder", "Tersier", "Tidak bereaksi"], "jawaban": "Tersier", "penjelasan": "Alkohol tersier langsung bereaksi dan membuat larutan keruh.", "skor": 3},
+        {"pertanyaan": "Senyawa fenol diuji menggunakan reagen...", "opsi": ["Benedict", "Lucas", "FeCl₃", "NaHCO₃"], "jawaban": "FeCl₃", "penjelasan": "FeCl₃ bereaksi dengan fenol menghasilkan warna ungu/hijau.", "skor": 4},
+        {"pertanyaan": "Cermin perak terbentuk pada uji...", "opsi": ["Benedict", "Tollens", "Molisch", "Biuret"], "jawaban": "Tollens", "penjelasan": "Uji Tollens menunjukkan aldehid melalui endapan perak.", "skor": 4},
+        {"pertanyaan": "Uji Fehling positif akan menghasilkan...", "opsi": ["Endapan merah bata", "Larutan biru", "Gas CO₂", "Warna ungu"], "jawaban": "Endapan merah bata", "penjelasan": "Fehling positif untuk aldehid.", "skor": 3},
+        {"pertanyaan": "Reagen 2,4-DNP digunakan untuk mendeteksi...", "opsi": ["Alkohol", "Ester", "Keton dan aldehid", "Amida"], "jawaban": "Keton dan aldehid", "penjelasan": "2,4-DNP menghasilkan endapan kuning/oranye.", "skor": 4},
+        {"pertanyaan": "NaHCO₃ digunakan untuk menguji...", "opsi": ["Alkohol", "Asam karboksilat", "Fenol", "Amina"], "jawaban": "Asam karboksilat", "penjelasan": "Reaksi menghasilkan gas CO₂.", "skor": 2},
+        {"pertanyaan": "Uji ester ditandai dengan munculnya...", "opsi": ["Warna ungu", "Gas", "Cermin perak", "Bau khas alkohol atau buah"], "jawaban": "Bau khas alkohol atau buah", "penjelasan": "Ester bereaksi menghasilkan aroma khas.", "skor": 3},
+        {"pertanyaan": "Uji Molisch digunakan untuk mengetahui adanya...", "opsi": ["Lemak", "Karbohidrat", "Protein", "Alkohol"], "jawaban": "Karbohidrat", "penjelasan": "Molisch menghasilkan cincin ungu jika positif.", "skor": 2},
+        {"pertanyaan": "Uji iodin pada amilum menunjukkan warna...", "opsi": ["Merah", "Kuning", "Biru tua", "Hijau"], "jawaban": "Biru tua", "penjelasan": "Reaksi amilum dengan iodin.", "skor": 3},
+        {"pertanyaan": "Uji Benedict menghasilkan endapan merah bata pada...", "opsi": ["Karbohidrat reduksi", "Protein", "Lemak", "Asam"], "jawaban": "Karbohidrat reduksi", "penjelasan": "Contoh: glukosa → endapan merah bata.", "skor": 3},
+        {"pertanyaan": "Uji Biuret untuk protein menghasilkan warna...", "opsi": ["Ungu", "Kuning", "Biru", "Putih"], "jawaban": "Ungu", "penjelasan": "Biuret positif menghasilkan warna ungu.", "skor": 3},
+        {"pertanyaan": "Uji Millon menunjukkan warna merah pada senyawa yang mengandung...", "opsi": ["Fenol", "Ester", "Karbohidrat", "Aldehid"], "jawaban": "Fenol", "penjelasan": "Reaksi fenol dengan Millon → merah.", "skor": 3},
+        {"pertanyaan": "Amonia (NH₃) dengan bau khas terbentuk saat menguji...", "opsi": ["Amida + NaOH", "Protein + Biuret", "Karbohidrat + H₂SO₄", "Alkohol + Lucas"], "jawaban": "Amida + NaOH", "penjelasan": "Amida bereaksi menghasilkan NH₃.", "skor": 2},
+        {"pertanyaan": "Uji Xantoproteat positif menghasilkan warna...", "opsi": ["Ungu", "Biru", "Kuning", "Hijau"], "jawaban": "Kuning", "penjelasan": "Reaksi senyawa aromatik dengan HNO₃.", "skor": 4},
+        {"pertanyaan": "Endapan kuning/oranye muncul saat uji...", "opsi": ["2,4-DNP", "Biuret", "Benedict", "FeCl₃"], "jawaban": "2,4-DNP", "penjelasan": "Reaksi dengan karbonil → endapan warna.", "skor": 3},
+        {"pertanyaan": "Uji lemak menghasilkan...", "opsi": ["Gas", "Endapan merah", "Busa", "Warna ungu"], "jawaban": "Busa", "penjelasan": "Lemak + basa → sabun + busa.", "skor": 3},
+        {"pertanyaan": "Warna ungu pada uji FeCl₃ menandakan adanya...", "opsi": ["Fenol", "Amina", "Amilum", "Karbohidrat"], "jawaban": "Fenol", "penjelasan": "Reaksi positif fenol.", "skor": 3},
+        {"pertanyaan": "Uji iodin positif ditandai dengan...", "opsi": ["Cermin perak", "Warna biru tua", "Gelembung gas", "Busa"], "jawaban": "Warna biru tua", "penjelasan": "Amilum bereaksi dengan iodin.", "skor": 3},
+        {"pertanyaan": "Karbohidrat reduksi memberikan reaksi positif dengan...", "opsi": ["Molisch dan Benedict", "Biuret dan Benedict", "Lucas dan FeCl₃", "Iodin dan Millon"], "jawaban": "Molisch dan Benedict", "penjelasan": "Molisch → karbohidrat umum, Benedict → gula reduksi.", "skor": 4},
     ]
 
     if "leaderboard" not in st.session_state:
