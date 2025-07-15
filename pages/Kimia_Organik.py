@@ -42,9 +42,8 @@ if st.session_state.slide_organik == "menu":
    🧠 CHiQ percaya: belajar itu bukan soal cepat atau lambat—tapi soal nyantol di kepala dengan gaya yang relatable ✨
     """)
 
-    st.markdown("---")
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
-    st.button("🎮 Game", on_click=ke_slide, args=("game",))
+    st.button("🎮 Kuis", on_click=ke_slide, args=("game",))
 
 
 # --------------------- MATERI ---------------------
