@@ -87,28 +87,63 @@ elif st.session_state.slide_organik == "game":
     st.markdown("---")
 
     all_soal = [
-        {
-            "pertanyaan": "Apa gugus fungsi dari alkohol?",
-            "opsi": ["-COOH", "-NH2", "-OH", "-CHO"],
-            "jawaban": "-OH",
-            "penjelasan": "Alkohol memiliki gugus fungsi -OH (hidroksil).",
-            "skor": 3
-        },
-        {
-            "pertanyaan": "Gugus fungsi dari asam karboksilat adalah?",
-            "opsi": ["-OH", "-COOH", "-NH2", "-C=O"],
-            "jawaban": "-COOH",
-            "penjelasan": "Asam karboksilat memiliki gugus -COOH yang bersifat asam.",
-            "skor": 5
-        },
-        {
-            "pertanyaan": "Apa jenis reaksi alkena dengan HBr?",
-            "opsi": ["Substitusi", "Eliminasi", "Adisi", "Polimerisasi"],
-            "jawaban": "Adisi",
-            "penjelasan": "Alkena bereaksi dengan HBr melalui mekanisme adisi karena ikatan rangkap.",
-            "skor": 2
-        }
-    ]
+    {
+        "pertanyaan": "Apa gugus fungsi dari alkohol?",
+        "opsi": ["-COOH", "-NH2", "-OH", "-CHO"],
+        "jawaban": "-OH",
+        "penjelasan": "Alkohol memiliki gugus fungsi -OH (hidroksil).",
+        "skor": 3
+    },
+    {
+        "pertanyaan": "Gugus fungsi dari asam karboksilat adalah?",
+        "opsi": ["-OH", "-COOH", "-NH2", "-C=O"],
+        "jawaban": "-COOH",
+        "penjelasan": "Asam karboksilat memiliki gugus -COOH, yang bersifat asam.",
+        "skor": 5
+    },
+    {
+        "pertanyaan": "Apa jenis reaksi alkena dengan HBr?",
+        "opsi": ["Substitusi", "Eliminasi", "Adisi", "Polimerisasi"],
+        "jawaban": "Adisi",
+        "penjelasan": "Alkena bereaksi dengan HBr melalui mekanisme adisi karena memiliki ikatan rangkap dua.",
+        "skor": 2
+    },
+    {
+        "pertanyaan": "Alkana memiliki ikatan apa?",
+        "opsi": ["Tunggal", "Rangkap dua", "Rangkap tiga", "Aromatik"],
+        "jawaban": "Tunggal",
+        "penjelasan": "Alkana hanya memiliki ikatan tunggal antar atom karbon.",
+        "skor": 3
+    },
+    {
+        "pertanyaan": "Etanol termasuk golongan senyawa apa?",
+        "opsi": ["Eter", "Aldehid", "Alkohol", "Alkana"],
+        "jawaban": "Alkohol",
+        "penjelasan": "Etanol adalah alkohol karena memiliki gugus -OH terikat pada karbon jenuh.",
+        "skor": 4
+    },
+    {
+        "pertanyaan": "Reaksi penggabungan dua molekul kecil membentuk molekul besar disebut?",
+        "opsi": ["Hidrolisis", "Adisi", "Substitusi", "Kondensasi"],
+        "jawaban": "Kondensasi",
+        "penjelasan": "Kondensasi adalah reaksi penggabungan dengan melepaskan molekul kecil seperti H₂O.",
+        "skor": 5
+    },
+    {
+        "pertanyaan": "Apa nama senyawa CH₃COOH?",
+        "opsi": ["Asam asetat", "Etanol", "Metanol", "Asam format"],
+        "jawaban": "Asam asetat",
+        "penjelasan": "CH₃COOH adalah nama kimia dari asam asetat atau asam etanoat.",
+        "skor": 3
+    },
+    {
+        "pertanyaan": "Benzena termasuk senyawa?",
+        "opsi": ["Alkana", "Alkena", "Aromatik", "Aldehid"],
+        "jawaban": "Aromatik",
+        "penjelasan": "Benzena adalah senyawa aromatik karena memiliki sistem cincin terdelokalisasi.",
+        "skor": 4
+    }
+]
 
     if "leaderboard" not in st.session_state:
         st.session_state.leaderboard = []
