@@ -66,7 +66,7 @@ elif st.session_state.slide_organik == "materi":
         Kamu bebas pilih jalur eksplorasimu.  
         Mau mulai dari yang simpel kayak hidrokarbon, atau langsung loncat ke senyawa yang bikin mie instan gurih?
 
-        🎓 Belajar di CHiQ gak harus urut—pilih topik yang paling bikin kamu kepo duluan, dan biarkan rasa penasaranmu nuntun ke insight kimia yang gak terduga! ⚗️✨
+        🎓 *Belajar di CHiQ gak harus urut—pilih topik yang paling bikin kamu kepo duluan, dan biarkan rasa penasaranmu nuntun ke insight kimia yang gak terduga!* ⚗️✨
         """)
 
         st.markdown("### 📚 Pilih Topik Materimu:")
