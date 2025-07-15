@@ -217,15 +217,15 @@ elif st.session_state.slide_organik == "game":
         st.session_state.player_name = ""
 
     if not st.session_state.player_name:
-    name = st.text_input("Masukkan nama kamu dulu ya! 👇")
-    col_a, col_b = st.columns([2, 1])
-    with col_a:
-        if name:
-            st.session_state.player_name = name
-            st.rerun()
-    with col_b:
-        st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
-    st.stop()
+        name = st.text_input("Masukkan nama kamu dulu ya! 👇")
+        col_a, col_b = st.columns([2, 1])
+        with col_a:
+            if name:
+                st.session_state.player_name = name
+                st.rerun()
+        with col_b:
+            st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
+        st.stop()
 
 
     if "random_soal" not in st.session_state:
