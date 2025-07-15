@@ -46,8 +46,7 @@ elif st.session_state.slide_anorganik == "materi":
         st.session_state.materi_topik_anorganik = None
 
     if st.session_state.materi_topik_anorganik is None:
-        st.markdown("## ⚗️ Cabang Kimia yang Bikin Warna Bicara dan Endapan Menjawab!")
-
+        
         st.markdown("""
         Pernah lihat nyala api tiba-tiba berubah warna saat logam dipanaskan?  
         Atau larutan bening yang mendadak membentuk endapan putih mirip kabut kecil?
