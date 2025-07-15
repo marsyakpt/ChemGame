@@ -48,35 +48,66 @@ if st.session_state.slide_organik == "menu":
 
 # --------------------- MATERI ---------------------
 elif st.session_state.slide_organik == "materi":
-    st.subheader("📘 Materi Kimia Organik")
-    if "materi_topik" not in st.session_state:
-        st.session_state.materi_topik = None
+    st.markdown("""
+    Bayangin kamu lagi megang parfum favorit, nyemil donat, atau cuci tangan pakai sabun wangi...  
+    Tanpa kamu sadari, kamu sedang berinteraksi langsung dengan dunia **Kimia Organik**!
 
-    if st.session_state.materi_topik is None:
-        st.write("Pilih topik materi:")
-        st.button("🛢️ Hidrokarbon", on_click=lambda: st.session_state.update({"materi_topik": "hidrokarbon"}))
-        st.button("🧪 Gugus Fungsi", on_click=lambda: st.session_state.update({"materi_topik": "gugus"}))
-        st.button("⚖️ Asam Basa", on_click=lambda: st.session_state.update({"materi_topik": "asam_basa"}))
-        st.button("🔁 Reaksi Organik", on_click=lambda: st.session_state.update({"materi_topik": "reaksi"}))
+    Dari molekul kecil seperti **hidrokarbon** yang bikin bahan bakar menyala,  
+    sampai struktur kompleks seperti **protein** yang menyusun tubuhmu—semuanya berbasis **karbon**, dan semuanya punya cerita.
+
+    Di halaman ini, CHiQ bakal ajak kamu eksplor berbagai jenis senyawa organik:  
+    ada yang aromanya khas, ada yang sifatnya unik, dan ada yang jadi bagian penting dalam hidup kita sehari-hari.
+
+    Kamu bebas pilih jalur eksplorasimu.  
+    Mau mulai dari yang simpel kayak hidrokarbon, atau langsung loncat ke senyawa yang bikin mie instan gurih?
+
+    🎓 Belajar di CHiQ gak harus urut—pilih topik yang paling bikin kamu kepo duluan, dan biarkan rasa penasaranmu nuntun ke insight kimia yang gak terduga! ⚗️✨
+    """)
+
+    if "materi_topik_organik" not in st.session_state:
+        st.session_state.materi_topik_organik = None
+
+    if st.session_state.materi_topik_organik is None:
+        st.markdown("### 📚 Pilih Topik Materimu:")
+        st.button("🔥 Hidrokarbon", on_click=lambda: st.session_state.update({"materi_topik_organik": "hidrokarbon"}))
+        st.button("🍷 Alkohol, Fenol, Eter", on_click=lambda: st.session_state.update({"materi_topik_organik": "alkohol"}))
+        st.button("🍋 Aldehid & Keton", on_click=lambda: st.session_state.update({"materi_topik_organik": "aldehid_keton"}))
+        st.button("🧂 Asam Karboksilat & Derivat", on_click=lambda: st.session_state.update({"materi_topik_organik": "karboksilat"}))
+        st.button("🌿 Amina & Derivat", on_click=lambda: st.session_state.update({"materi_topik_organik": "amina"}))
+        st.button("🧴 Lemak & Minyak", on_click=lambda: st.session_state.update({"materi_topik_organik": "lemak"}))
+        st.button("🍞 Karbohidrat", on_click=lambda: st.session_state.update({"materi_topik_organik": "karbohidrat"}))
+        st.button("🥚 Protein", on_click=lambda: st.session_state.update({"materi_topik_organik": "protein"}))
         st.markdown("---")
         st.button("⬅️ Kembali ke Menu", on_click=ke_slide, args=("menu",))
     else:
-        topik = st.session_state.materi_topik
+        topik = st.session_state.materi_topik_organik
         if topik == "hidrokarbon":
-            st.markdown("## 🛢️ Hidrokarbon")
-            st.markdown("- Alkana: ikatan tunggal\n- Alkena: ikatan rangkap dua\n- Alkuna: rangkap tiga\n- Contoh: metana, etena, asetilena")
-        elif topik == "gugus":
-            st.markdown("## 🧪 Gugus Fungsi")
-            st.markdown("- Alkohol (-OH)\n- Asam Karboksilat (-COOH)\n- Amin (-NH₂)\n- Aldehid (-CHO)\n- Ketona (C=O)")
-        elif topik == "asam_basa":
-            st.markdown("## ⚖️ Asam Basa")
-            st.markdown("- Asam organik: -COOH\n- Basa organik: -NH₂\n- Contoh: asam asetat dan metilamina")
-        elif topik == "reaksi":
-            st.markdown("## 🔁 Reaksi Organik")
-            st.markdown("- Substitusi: atom diganti\n- Adisi: penambahan\n- Eliminasi: pengurangan\n- Contoh: alkena + HBr")
+            st.markdown("## 🔥 Hidrokarbon")
+            st.markdown("- Senyawa karbon & hidrogen\n- Jenis: alkan, alken, alkuna")
+        elif topik == "alkohol":
+            st.markdown("## 🍷 Alkohol, Fenol, Eter")
+            st.markdown("- Gugus -OH & sifat larut air\n- Reaksi oksidasi & aroma senyawa")
+        elif topik == "aldehid_keton":
+            st.markdown("## 🍋 Aldehid & Keton")
+            st.markdown("- Gugus karbonil\n- Contoh senyawa: formaldehid, aseton")
+        elif topik == "karboksilat":
+            st.markdown("## 🧂 Asam Karboksilat & Derivatnya")
+            st.markdown("- Gugus -COOH\n- Derivat: ester, anhidrida, amida")
+        elif topik == "amina":
+            st.markdown("## 🌿 Amina & Derivatnya")
+            st.markdown("- Gugus -NH₂\n- Sifat basa & reaktivitas")
+        elif topik == "lemak":
+            st.markdown("## 🧴 Lemak & Minyak")
+            st.markdown("- Trigliserida\n- Reaksi saponifikasi & peran dalam tubuh")
+        elif topik == "karbohidrat":
+            st.markdown("## 🍞 Karbohidrat")
+            st.markdown("- Monosakarida, disakarida, polisakarida\n- Fungsi sebagai sumber energi")
+        elif topik == "protein":
+            st.markdown("## 🥚 Protein")
+            st.markdown("- Asam amino & struktur 3D\n- Peran enzim & fungsi biologis")
 
         st.markdown("---")
-        st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik": None}))
+        st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik_organik": None}))
         st.button("🏠 Menu", on_click=ke_slide, args=("menu",))
 
 # ---------------------- GAME ----------------------
