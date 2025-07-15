@@ -34,9 +34,11 @@ st.page_link("pages/Kimia_Anorganik.py", label="⚗️ Kimia Anorganik")
 
 # Bonus section
 st.markdown("---")
-st.markdown("💡 **Fun Fact CHiQ!**")
-st.markdown("""
-- Air bisa bikin kamu basah, tapi kimia bikin kamu paham kenapa 🤓  
-- Aspirin itu senyawa organik, tapi efeknya kadang bikin lupa deadline 💊  
-- Kimia itu tentang reaksi—dan di CHiQ, kamulah katalisnya ⚡  
-""")
+with st.expander("💡 Fun Fact Kimia Seru — Klik buat buka!"):
+    st.markdown("""
+    - 🍌 **Pisang itu sedikit radioaktif!** Karena mengandung isotop alami kalium-40. Tapi tenang, kamu gak akan glow in the dark 😆  
+    - ❄️ **Air bisa membeku dan mendidih sekaligus!** Di titik triple, air bisa berada di fase padat, cair, dan gas secara bersamaan  
+    - 💎 **Grafit dan berlian itu sama-sama karbon!** Bedanya cuma di cara atomnya tersusun. Satu jadi pensil, satu lagi jadi cincin tunangan 💍  
+    - 🌩️ **Petir bisa bikin ozon!** Makanya setelah badai, kamu kadang cium bau “segar”—itu ozon hasil reaksi di atmosfer  
+    - 🔥 **Glow stick bersinar karena reaksi kimia!** Namanya *chemiluminescence*, cahaya tanpa panas hasil reaksi kimia  
+    """)
