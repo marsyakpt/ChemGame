@@ -29,7 +29,7 @@ if st.session_state.slide_anorganik == "menu":
     st.markdown("### 🎯 Jadi kamu mau pilih yang mana nih?")
     st.markdown("""
     - 📖 *Baca Materi dulu* — pelajari reaksi dan penjelasannya dari awal  
-    - 🎮 *Langsung ke Kuis* — uji kemampuanmu dan lihat seberapa cepat kamu bisa mengenali senyawa!
+    - 🎮 *Langsung ke Quis* — uji kemampuanmu dan lihat seberapa cepat kamu bisa mengenali senyawa!
     
     Tenang aja, mau mulai dari mana pun, CHiQ tetap siap jadi partner belajarmu 😄✨
     """)
