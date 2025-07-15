@@ -1,38 +1,39 @@
 import streamlit as st
 
-st.title("🔬 Kimia Organik")
+st.title("⚗️ Kimia Anorganik")
 
-# Inisialisasi status halaman dalam 1 page
-if "slide_organik" not in st.session_state:
-    st.session_state.slide_organik = "menu"
+# Inisialisasi status
+if "slide_anorganik" not in st.session_state:
+    st.session_state.slide_anorganik = "menu"
 
-# Fungsi navigasi dalam halaman
+# Fungsi untuk berpindah slide
 def ke_slide(nama):
-    st.session_state.slide_organik = nama
+    st.session_state.slide_anorganik = nama
 
-# Menu awal
-if st.session_state.slide_organik == "menu":
-    st.write("Silakan pilih:")
+# Menu utama Kimia Anorganik
+if st.session_state.slide_anorganik == "menu":
+    st.write("Mau belajar atau main game?")
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
     st.button("🎮 Game", on_click=ke_slide, args=("game",))
 
 # Halaman Materi
-elif st.session_state.slide_organik == "materi":
-    st.subheader("📘 Materi Kimia Organik")
+elif st.session_state.slide_anorganik == "materi":
+    st.subheader("📘 Materi Kimia Anorganik")
     st.markdown("""
-    - Hidrokarbon: alkana, alkena, alkuna
-    - Gugus fungsi: -OH, -COOH, -NH2
-    - Reaksi: substitusi, adisi, eliminasi
+    - Tabel periodik unsur
+    - Ikatan ionik, kovalen, dan logam
+    - Senyawa kompleks
+    - Reaksi redoks dan elektrokimia
     """)
     st.button("⬅️ Kembali", on_click=ke_slide, args=("menu",))
 
 # Halaman Game
-elif st.session_state.slide_organik == "game":
-    st.subheader("🎮 Game Kimia Organik")
-    soal = st.radio("Apa gugus fungsi dari alkohol?", ["-COOH", "-NH2", "-OH", "-CHO"])
+elif st.session_state.slide_anorganik == "game":
+    st.subheader("🎮 Game Kimia Anorganik")
+    soal = st.radio("Unsur manakah yang termasuk logam alkali?", ["Ca", "Mg", "Na", "Al"])
     if st.button("Cek Jawaban"):
-        if soal == "-OH":
-            st.success("✅ Benar! Alkohol punya gugus -OH.")
+        if soal == "Na":
+            st.success("✅ Benar! Na (natrium) adalah logam alkali.")
         else:
-            st.error("❌ Salah! Jawaban yang benar adalah -OH.")
+            st.error("❌ Salah! Jawaban yang benar adalah Na.")
     st.button("⬅️ Kembali", on_click=ke_slide, args=("menu",))
