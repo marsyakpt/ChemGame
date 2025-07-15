@@ -110,8 +110,7 @@ elif st.session_state.slide_organik == "game":
             st.button("📚 Kembali ke Materi", on_click=ke_slide, args=("materi",))
         with col3:
     if st.button("🏠 Kembali ke Menu Utama"):
-        st.session_state.slide_organik = None  # Reset supaya balik ke halaman utama (misal sidebar utama)
-        st.switch_page("main.py")  # jika kamu pakai banyak halaman (dengan multipage)
+        st.session_state.slide_organik = None
 
     else:
         soal = st.session_state.random_soal[st.session_state.index_soal]
