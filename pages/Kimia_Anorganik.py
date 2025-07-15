@@ -13,7 +13,35 @@ def ke_slide(nama):
 
 # ---------------------- MENU ----------------------
 if st.session_state.slide_anorganik == "menu":
-    st.write("Silakan pilih:")
+    st.markdown("## ⚗️ Kimia Anorganik")
+    st.markdown("### 🧬 Praktikum Digital: Uji Nyala & Uji Kualitatif")
+
+    st.markdown("""
+    “Pernah lihat nyala api berwarna hijau di laboratorium? Atau larutan yang tiba-tiba mengendap saat ditetesin reagen?”  
+    Di materi Kimia Anorganik CHiQ, kamu akan belajar mengenali senyawa anorganik lewat dua uji populer: 🔥 **Uji Nyala** dan 🧪 **Uji Kualitatif**.
+
+    Materi disajikan dalam gaya praktikum digital: singkat, aplikatif, dan bikin kamu ngerasa kayak bantu dosen di lab! 😄
+    """)
+
+    st.markdown("### 📘 Materi yang Akan Kamu Pelajari:")
+    st.markdown("""
+    - 🔥 **Uji Nyala** — kenali logam berdasarkan warna api  
+    - 🧪 **Uji Kualitatif** — identifikasi ion lewat reaksi khas seperti endapan & perubahan warna
+
+    💡 Contoh hasil uji:
+    - Na⁺ → kuning terang  
+    - Cu²⁺ → biru kehijauan  
+    - Cl⁻ + Ag⁺ → endapan putih
+    """)
+
+    st.markdown("### 🎯 Jalur Belajar Kamu:")
+    st.markdown("""
+    Pilih jalur yang paling kamu suka:
+    - 📖 *Baca Materi* — pelajari konsep dan reaksi dari awal  
+    - 🎮 *Langsung ke Game* — tes kemampuanmu lewat soal interaktif
+    """)
+
+    st.markdown("---")
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
     st.button("🎮 Game", on_click=ke_slide, args=("game",))
 
