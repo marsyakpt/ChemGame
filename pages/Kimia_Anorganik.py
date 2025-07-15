@@ -60,8 +60,7 @@ elif st.session_state.slide_anorganik == "materi":
         CHiQ gak ngajak kamu hafalan.  
         CHiQ ngajak kamu kenali karakter senyawa lewat warna, perubahan, dan interaksi yang bisa kamu lihat langsung.
 
-        ---
-        ### 🎯 Jadi, kamu mau mulai eksplorasi dari mana dulu?
+        ### Jadi, kamu mau mulai eksplorasi dari mana dulu?
 
         🔥 Api yang bicara melalui warna logam?  
         🧪 Larutan bening yang diam-diam punya reaksi mengejutkan?
@@ -69,7 +68,7 @@ elif st.session_state.slide_anorganik == "materi":
         💬 *Di CHiQ, setiap reaksi adalah kisah—dan kamu adalah pembaca warna, pola, dan clue-nya.* ⚡✨
         """)
 
-        st.markdown("### 📚 Pilih Topik Materimu:")
+        st.markdown("### 📚 Pilih Topik Materimu 📚:")
         st.button("🔥 Uji Nyala", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "uji_nyala"}))
         st.button("🧪 Uji Kualitatif Senyawa", on_click=lambda: st.session_state.update({"materi_topik_anorganik": "uji_kualitatif"}))
         st.markdown("---")
