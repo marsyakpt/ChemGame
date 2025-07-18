@@ -1,1 +1,1 @@
-from Home import *
+streamlit run main.py
