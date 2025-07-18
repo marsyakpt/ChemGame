@@ -111,7 +111,7 @@ elif st.session_state.slide_anorganik == "materi":
             Contoh:
             
             | Valensi   | Contoh Ion                   | Nama Ion                       |
-            |----------:|----------------------------|----------------------------------|
+            |-----------|----------------------------|----------------------------------|
             | 1⁺        | Na⁺, K⁺, NH₄⁺              | Natrium, Kalium, Amonium         |
             | 2⁺        | Ca²⁺, Mg²⁺, Fe²⁺           | Kalsium, Magnesium, Besi(II)     |
             | 3⁺        | Fe³⁺, Al³⁺, Cr³⁺           | Besi(III), Aluminium, Krom(III)  |
@@ -123,7 +123,7 @@ elif st.session_state.slide_anorganik == "materi":
             Contoh:
             
             |   Valensi | Contoh Ion                       | Nama Ion                          |
-            |----------:|----------------------------------|-------------------------------------|
+            |-----------|----------------------------------|-------------------------------------|
             | 1⁻        | Cl⁻, NO₃⁻, OH⁻                  | Klorida, Nitrat, Hidroksida         |
             | 2⁻        | SO₄²⁻, CO₃²⁻, S²⁻               | Sulfat, Karbonat, Sulfida           |
             | 3⁻        | PO₄³⁻                           | Fosfat                              |
