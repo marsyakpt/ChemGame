@@ -110,7 +110,7 @@ elif st.session_state.slide_anorganik == "materi":
             Terbentuk dari unsur logam atau gugus yang kehilangan elektron.  
             Contoh:
             
-            | *Valensi* | *Contoh Ion*               | *Nama Ion*                       |
+            | Valensi   | Contoh Ion                   | Nama Ion                       |
             |----------:|----------------------------|----------------------------------|
             | 1⁺        | Na⁺, K⁺, NH₄⁺              | Natrium, Kalium, Amonium         |
             | 2⁺        | Ca²⁺, Mg²⁺, Fe²⁺           | Kalsium, Magnesium, Besi(II)     |
@@ -122,7 +122,7 @@ elif st.session_state.slide_anorganik == "materi":
             Terbentuk dari unsur non-logam atau gugus yang menerima elektron.  
             Contoh:
             
-            | *Valensi* | *Contoh Ion*                    | *Nama Ion*                          |
+            |   Valensi | Contoh Ion                       | Nama Ion                          |
             |----------:|----------------------------------|-------------------------------------|
             | 1⁻        | Cl⁻, NO₃⁻, OH⁻                  | Klorida, Nitrat, Hidroksida         |
             | 2⁻        | SO₄²⁻, CO₃²⁻, S²⁻               | Sulfat, Karbonat, Sulfida           |
@@ -132,34 +132,34 @@ elif st.session_state.slide_anorganik == "materi":
         2) Analisis Kualitatif
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
 
-            | *Kation*  | *Reagen*       | *Hasil Uji*                    |
+            | Kation  | Reagen         | Hasil Uji                    |
             |--------|----------------|--------------------------------|
-            | *Ag⁺*  | HCl / Cl⁻        | Endapan putih AgCl               |
-            | *Pb²⁺* | HCl              | Endapan putih PbCl₂              |
+            | Ag⁺  | HCl / Cl⁻        | Endapan putih AgCl               |
+            | Pb²⁺ | HCl              | Endapan putih PbCl₂              |
             |        | KI               | Endapan kuning PbI₂              |
-            | *Fe²⁺* | NaOH / NH₄OH     | Endapan hijau Fe(OH)₂            |
+            | Fe²⁺ | NaOH / NH₄OH     | Endapan hijau Fe(OH)₂            |
             |        | K₃[Fe(CN)₆]     | Endapan biru tua (Turnbull Blue) |
-            | *Fe³⁺* | NaOH / NH₄OH     | Endapan cokelat Fe(OH)₃          |
+            | Fe³⁺ | NaOH / NH₄OH     | Endapan cokelat Fe(OH)₃          |
             |        | K₄[Fe(CN)₆]     | Endapan biru tua (Prussian Blue) |
             |        | SCN⁻             | Larutan merah darah (Fe(SCN)³⁺)  |
-            | *Cu²⁺* | NaOH / NH₄OH     | Endapan biru muda Cu(OH)₂        |
+            | Cu²⁺ | NaOH / NH₄OH     | Endapan biru muda Cu(OH)₂        |
             |        | NH₄OH (berlebih) | Kompleks biru tua [Cu(NH₃)₄]²⁺   |
-            | *Zn²⁺* | NaOH / NH₄OH     | Endapan putih Zn(OH)₂            |
+            | Zn²⁺ | NaOH / NH₄OH     | Endapan putih Zn(OH)₂            |
             |        | NaOH (berlebih)  | Larut (kompleks Zn(OH)₄²⁻)       |
-            | *Al³⁺* | NaOH             | Endapan putih Al(OH)₃            |
+            | Al³⁺ | NaOH             | Endapan putih Al(OH)₃            |
             |        | NaOH (berlebih)  | Larut (kompleks Al(OH)₄⁻)        |
-            | *Ba²⁺* | H₂SO₄ / SO₄²⁻    | Endapan putih BaSO₄              |
-            | *Ca²⁺* | Na₂CO₃           | Endapan putih CaCO₃              |
-            | *NH₄⁺* | NaOH + pemanasan | Bau amonia (gas NH₃)             |
+            | Ba²⁺ | H₂SO₄ / SO₄²⁻    | Endapan putih BaSO₄              |
+            | Ca²* | Na₂CO₃           | Endapan putih CaCO₃              |
+            | NH₄⁺ | NaOH + pemanasan | Bau amonia (gas NH₃)             |
 
 
-            | *Anion*   | *Reagen Penguji*        | *Hasil Khas*                    |
+            | Anion     |  Reagen Penguji         |  Hasil Khas                     |
             |-----------|-------------------------|---------------------------------|
-            | *Cl⁻*     | AgNO₃                   | Endapan putih larut NH₃         |
-            | *SO₄²⁻*   | BaCl₂                   | Endapan putih tidak larut       |
-            | *CO₃²⁻*   | HCl                     | CO₂, air kapur keruh            |
-            | *NO₃⁻*    | FeSO₄ + H₂SO₄           | Cincin coklat                   |
-            | *PO₄³⁻*   | Amonium molibdat        | Endapan kuning                  |
+            | Cl⁻      | AgNO₃                   | Endapan putih larut NH₃         |
+            | SO₄²⁻    | BaCl₂                   | Endapan putih tidak larut       |
+            | CO₃²⁻    | HCl                     | CO₂, air kapur keruh            |
+            | NO₃⁻     | FeSO₄ + H₂SO₄           | Cincin coklat                   |
+            | PO₄³⁻    | Amonium molibdat        | Endapan kuning                  |
 
             
 
