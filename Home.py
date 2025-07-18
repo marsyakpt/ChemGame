@@ -77,7 +77,7 @@ st.markdown("""
 Di CHiQ kamu bisa:
 - 📚 Belajar materi kimia yang ringkas & estetik
 - 🎯 Main kuis interaktif dan uji pemahaman
-- 🏆 Naik peringkat di leaderboard dan saingin temanmu!
+- 🏆 Naik peringkat di leaderboard buat tau tigkat pemahaman kamu!
 """)
 
 # Navigasi ke topik
