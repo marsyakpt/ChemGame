@@ -12,7 +12,7 @@ with st.sidebar:
     # st.sidebar.page_link("pages/quiz.py", label="🧪 Kuis Kimia")
 
 # ===== LOGO DI HALAMAN UTAMA =====
-st.image("logo.png.png", width=500)
+st.image("logo.png.2.png", width=500)
 
 # Perkecil jarak ke judul
 st.markdown("<div style='margin-top: -10px'></div>", unsafe_allow_html=True)
