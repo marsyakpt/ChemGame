@@ -115,12 +115,12 @@ elif st.session_state.slide_organik == "materi":
             - Dietil eter (anestesi)
 
             Pengujian Kualitatif:
-            a. Uji Alkohol
+            -a. Uji Alkohol
                 Uji Lucas: Alkohol + reagen Lucas (ZnCl₂ + HCl pekat)
                 - Alkohol tersier  : keruh cepat
                 - Alkohol sekunder : keruh lambat
                 - Alkohol primer   : tidak keruh
-            b. Uji Fenol
+            -b. Uji Fenol
                 Dengan FeCl₃       : Larutan berubah warna ungu, biru, atau hijau.
 
 
