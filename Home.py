@@ -1,5 +1,7 @@
 import streamlit as st
 from components import show_sidebar_logo
+streamlit run Home.py
+
 
 
 # Konfigurasi halaman
