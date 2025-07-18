@@ -1,5 +1,5 @@
 import streamlit as st
-from Home import
+from Home import *
 from components import show_sidebar_logo
 
 # Konfigurasi halaman
