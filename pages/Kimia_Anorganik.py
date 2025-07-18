@@ -107,6 +107,10 @@ elif st.session_state.slide_anorganik == "materi":
             🔍 *Warna-warna ini bukan dekorasi, tapi tanda "bahasa cahaya" dari logam-logam laboratorium!*
             """)
 
+            st.markdown("---")
+            st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik_anorganik": None}))
+            st.button("🏠 Menu", on_click=ke_slide, args=("menu",))
+
         elif topik == "uji_kualitatif":
             st.markdown("## 🧪 Uji Kualitatif Senyawa Anorganik")
             st.markdown("""
