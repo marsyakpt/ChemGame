@@ -97,7 +97,9 @@ elif st.session_state.slide_organik == "materi":
             - Aromatik (cincin benzena): biasa di pewangi
 
             Pengujian Kualitatif:
-            -	
+            - Dengan air brom (Br₂ dalam CCl₄)
+                    a. Alkena (tak jenuh): larutan brom hilang warnanya (dekolorisasi)
+                    b. Alkana & aromatik: tidak bereaksi (tetap berwarna coklat)
 
 
             🧠 *Fun fact:* Benzena itu aromatik yang literally... punya aroma 😆
@@ -122,6 +124,9 @@ elif st.session_state.slide_organik == "materi":
                 - Alkohol primer   : tidak keruh
             - b. Uji Fenol
                 Dengan FeCl₃       : Larutan berubah warna ungu, biru, atau hijau.
+
+            - c. Uji Eter
+                - Uji dengan HCl pekat : Eter + HBr → alkohol + alkil bromida = terbentuk lapisan minyak (alkil) di permukaan dan tercium bau yang khas
 
 
             🧠 *Fun fact:* Alkohol = bahan parfum yang aromanya nempel di baju berjam-jam!
@@ -177,8 +182,7 @@ elif st.session_state.slide_organik == "materi":
             - Dopamin (neurotransmitter berbasis amina)
 
             Pengujian Kualitatif:
-            - Dengan NaOH                  : Menghasilkan gas amonia (NH₃) berbau khas.
-            - Dengan benzensulfonilklorida : Menghasilkan cairan yang tidak larut
+            - HCl dipanaskan  = Tercium bau khas amonia (NH₃) → menunjukkan adanya gugus amina
             
 
             🧠 *Fun fact:* Tanpa amina, kamu gak bisa mikir—karena dopamin = amina!
