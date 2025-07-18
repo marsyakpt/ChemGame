@@ -1,0 +1,26 @@
+import streamlit as st
+
+st.set_page_config(page_title="Tentang Aplikasi", page_icon="🧑‍🔬")
+
+st.title("🧪 Tentang Aplikasi CHiQ")
+st.markdown("Web ini dikembangkan untuk membuat pembelajaran kimia lebih fun untuk dipelajari!")
+
+st.markdown("---")
+st.header("👩‍💻 Tim Pengembang")
+st.markdown("""
+- **Fathia Arifahanum M Nur** — 2460368
+- **Marsya Kartika Putri** — 2460412  
+- **Nuri Septrianti** — 2460475  
+- **Terrie Aulia Hannifa** — 2460526
+""")
+
+st.markdown("---")
+st.header("📬 Kotak Saran & Masukan")
+saran = st.text_area("Tulis saran atau ide kamu untuk pengembangan CHiQ")
+
+if st.button("Kirim Saran"):
+    if saran.strip() != "":
+        st.success("Terima kasih atas masukannya! 💌")
+        # Bisa tambahkan logika simpan ke Sheets atau file
+    else:
+        st.warning("Isi dulu sarannya sebelum dikirim, ya 😄")
