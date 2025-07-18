@@ -98,7 +98,7 @@ elif st.session_state.slide_anorganik == "materi":
 
         elif topik == "uji_kualitatif":
             st.markdown("## 🧪 Uji Kualitatif Senyawa Anorganik")
-            st.markdown("""
+            st.markdown
             Ion adalah atom atau kelompok atom yang bermuatan listrik karena kehilangan atau menerima elektron. Tujuan nya untuk mengidentifikasi kation (ion positif) dan anion (ion negatif) dalam senyawa anorganik berdasarkan reaksi khas seperti pembentukan endapan, warna nyala, perubahan warna, dan pelepasan gas. Ion terdiri dari:
             -  	Kation: Ion bermuatan positif (kehilangan elektron)
             - 	Anion: Ion bermuatan negatif (menerima elektron)
@@ -116,7 +116,6 @@ elif st.session_state.slide_anorganik == "materi":
             | 2⁺        | Ca²⁺, Mg²⁺, Fe²⁺           | Kalsium, Magnesium, Besi(II)     |
             | 3⁺        | Fe³⁺, Al³⁺, Cr³⁺           | Besi(III), Aluminium, Krom(III)  |
             
-            ---
             
             -  Anion (Ion Negatif)
             Terbentuk dari unsur non-logam atau gugus yang menerima elektron.  
@@ -164,7 +163,7 @@ elif st.session_state.slide_anorganik == "materi":
             
 
             🧪 *CHiQ bakal bantu kamu baca sinyal dari reaksi-reaksi ini seperti detektif kimia.* 🔬✨
-            """)
+        
 
         st.markdown("---")
         st.button("⬅️ Kembali", on_click=lambda: st.session_state.update({"materi_topik_anorganik": None}))
