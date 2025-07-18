@@ -101,25 +101,28 @@ elif st.session_state.slide_anorganik == "materi":
             st.markdown("""
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
 
-            | Ion            | Reagen               | Hasil Reaksi                |
-            |----------------------------|------------------------------|
+           st.markdown("""
+            | *Ion*  | *Reagen*       | *Hasil Uji*                    |
+            |--------|----------------|--------------------------------|
             | *Ag⁺*  | HCl / Cl⁻        | Endapan putih AgCl               |
             | *Pb²⁺* | HCl              | Endapan putih PbCl₂              |
-            |          | KI               | Endapan kuning PbI₂              |
+            |        | KI               | Endapan kuning PbI₂              |
             | *Fe²⁺* | NaOH / NH₄OH     | Endapan hijau Fe(OH)₂            |
-            |          | K₃\[Fe(CN)₆]     | Endapan biru tua (Turnbull Blue) |
+            |        | K₃[Fe(CN)₆]     | Endapan biru tua (Turnbull Blue) |
             | *Fe³⁺* | NaOH / NH₄OH     | Endapan cokelat Fe(OH)₃          |
-            |          | K₄\[Fe(CN)₆]     | Endapan biru tua (Prussian Blue) |
-            |          | SCN⁻             | Larutan merah darah (Fe(SCN)³⁺)  |
+            |        | K₄[Fe(CN)₆]     | Endapan biru tua (Prussian Blue) |
+            |        | SCN⁻             | Larutan merah darah (Fe(SCN)³⁺)  |
             | *Cu²⁺* | NaOH / NH₄OH     | Endapan biru muda Cu(OH)₂        |
-            |          | NH₄OH (berlebih) | Kompleks biru tua \[Cu(NH₃)₄]²⁺  |
+            |        | NH₄OH (berlebih) | Kompleks biru tua [Cu(NH₃)₄]²⁺   |
             | *Zn²⁺* | NaOH / NH₄OH     | Endapan putih Zn(OH)₂            |
-            |          | NaOH (berlebih)  | Larut (kompleks Zn(OH)₄²⁻)       |
+            |        | NaOH (berlebih)  | Larut (kompleks Zn(OH)₄²⁻)       |
             | *Al³⁺* | NaOH             | Endapan putih Al(OH)₃            |
-            |          | NaOH (berlebih)  | Larut (kompleks Al(OH)₄⁻)        |
+            |        | NaOH (berlebih)  | Larut (kompleks Al(OH)₄⁻)        |
             | *Ba²⁺* | H₂SO₄ / SO₄²⁻    | Endapan putih BaSO₄              |
             | *Ca²⁺* | Na₂CO₃           | Endapan putih CaCO₃              |
             | *NH₄⁺* | NaOH + pemanasan | Bau amonia (gas NH₃)             |
+            """)
+
             
 
             🧪 *CHiQ bakal bantu kamu baca sinyal dari reaksi-reaksi ini seperti detektif kimia.* 🔬✨
