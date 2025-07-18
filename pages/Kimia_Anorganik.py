@@ -146,9 +146,6 @@ elif st.session_state.slide_anorganik == "game":
     {"pertanyaan": "Salah satu reagen yang digunakan dalam pengelompokan kation adalah...", "opsi": ["H₂O", "NH₄OH", "NaCl", "H₂O₂"], "jawaban": "NH₄OH", "penjelasan": "NH₄OH bantu mengendapkan hidroksida logam sesuai golongannya. Jadi ‘pintu masuk’ klasifikasi kation 🧪", "skor": 3},
 ]
 
-]
-
-
     if "leaderboard_anorganik" not in st.session_state:
         st.session_state.leaderboard_anorganik = []
 
