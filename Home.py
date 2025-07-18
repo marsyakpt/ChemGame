@@ -4,7 +4,7 @@ import streamlit as st  # Wajib ada di baris paling atas!
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 
 # Sidebar (kalau kamu mau logo dan teks di samping)
-st.sidebar.image("logo.png", width=120)
+st.sidebar.image("logo.png.png", width=120)
 st.sidebar.markdown("### CHIQ Game")
 st.sidebar.markdown("Interaktif. Estetik. Seru!")
 
