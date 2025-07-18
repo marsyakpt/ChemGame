@@ -100,13 +100,13 @@ elif st.session_state.slide_anorganik == "materi":
             st.markdown("## 🧪 Uji Kualitatif Senyawa Anorganik")
             st.markdown("""
             Ion adalah atom atau kelompok atom yang bermuatan listrik karena kehilangan atau menerima elektron. Tujuan nya untuk mengidentifikasi kation (ion positif) dan anion (ion negatif) dalam senyawa anorganik berdasarkan reaksi khas seperti pembentukan endapan, warna nyala, perubahan warna, dan pelepasan gas. Ion terdiri dari:
-            •	Kation: Ion bermuatan positif (kehilangan elektron)
-            •	Anion: Ion bermuatan negatif (menerima elektron)
+            -  	Kation: Ion bermuatan positif (kehilangan elektron)
+            - 	Anion: Ion bermuatan negatif (menerima elektron)
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
 
             1) Klasifikasi Ion Berdasarkan Muatan
             
-             • Kation (Ion Positif)
+             -  Kation (Ion Positif)
             Terbentuk dari unsur logam atau gugus yang kehilangan elektron.  
             Contoh:
             
@@ -118,7 +118,7 @@ elif st.session_state.slide_anorganik == "materi":
             
             ---
             
-             • Anion (Ion Negatif)
+            -  Anion (Ion Negatif)
             Terbentuk dari unsur non-logam atau gugus yang menerima elektron.  
             Contoh:
             
