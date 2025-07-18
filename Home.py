@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 
 # Tampilkan logo di atas judul utama
-st.image("logo.png", width=150)
+st.image("logo.png.png", width=150)
 
 # Sedikit jarak (rapat) antara logo dan judul
 st.markdown("<div style='margin-top: -10px'></div>", unsafe_allow_html=True)
