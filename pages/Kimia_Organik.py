@@ -124,7 +124,6 @@ elif st.session_state.slide_organik == "materi":
                 Dengan FeCl₃       : Larutan berubah warna ungu, biru, atau hijau.
 
 
-
             🧠 *Fun fact:* Alkohol = bahan parfum yang aromanya nempel di baju berjam-jam!
             """)
 
