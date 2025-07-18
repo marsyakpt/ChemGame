@@ -138,12 +138,13 @@ elif st.session_state.slide_organik == "materi":
             - Formaldehid (pengawet)  
             - Aseton (penghapus kuteks!)
 
-            Pengujian Kualitatif:
-            a. Uji Aldehid
-                - Uji Tollens  : Aldehida + AgNO₃ amoniakal → cermin perak.
-                - Uji Fehling  : Aldehida + larutan Fehling → endapan merah bata (Cu₂O).
-            b. Uji Keton:
-                - Uji 2,4-DNP  : akan menghasilkan endapan kuning/oranye
+             **🔬 Pengujian Kualitatif:**
+                - **a. Uji Aldehid**  
+                    • Uji Tollens : Aldehida + AgNO₃ amoniakal → *cermin perak*  
+                    • Uji Fehling : Aldehida + larutan Fehling → *endapan merah bata (Cu₂O)*
+
+                - **b. Uji Keton**  
+                    • Uji 2,4-DNP : menghasilkan *endapan kuning/oranye*
 
 
 
