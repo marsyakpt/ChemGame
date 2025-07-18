@@ -2,7 +2,7 @@ st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 
 # Sidebar berisi logo + teks utama
 with st.sidebar:
-    st.image("logo.png", width=120)
+    st.image("logo.png.png", width=120)
     st.markdown("### Yo, welcome to CHIQ! 😎")
     st.markdown("Chemistry Interactive Quiz")
 
