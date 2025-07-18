@@ -97,7 +97,7 @@ elif st.session_state.slide_organik == "materi":
             - Aromatik (cincin benzena): biasa di pewangi
 
             Pengujian Kualitatif:
-            •	Uji Molisch   : alfa-naftol + H2SO4 -> Menghasilkan cincin ungu di batas
+            •	Uji Molisch   : alfa-naftol + H2SO4 -> Menghasilkan cincin ungu di batas 
             •	Uji Benedict  : benedict + gula reduksi -> endapan merah bata
             •	Uji Iodium    : iodin + amilum -> warna biru tua
 
