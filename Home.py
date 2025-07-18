@@ -4,6 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="CHiQ | Home", page_icon="🧪")
 
 # Header
+st.image("logo.png", width=150)
 st.title("Yo, welcome to CHIQ! 😎")
 st.subheader("Chemistry Interactive Quiz")
 
