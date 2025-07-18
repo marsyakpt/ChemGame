@@ -100,8 +100,6 @@ elif st.session_state.slide_anorganik == "materi":
             st.markdown("## 🧪 Uji Kualitatif Senyawa Anorganik")
             st.markdown("""
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
-
-           st.markdown("""
             | *Ion*  | *Reagen*       | *Hasil Uji*                    |
             |--------|----------------|--------------------------------|
             | *Ag⁺*  | HCl / Cl⁻        | Endapan putih AgCl               |
@@ -121,7 +119,6 @@ elif st.session_state.slide_anorganik == "materi":
             | *Ba²⁺* | H₂SO₄ / SO₄²⁻    | Endapan putih BaSO₄              |
             | *Ca²⁺* | Na₂CO₃           | Endapan putih CaCO₃              |
             | *NH₄⁺* | NaOH + pemanasan | Bau amonia (gas NH₃)             |
-            """)
 
             
 
