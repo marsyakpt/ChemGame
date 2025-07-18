@@ -3,8 +3,10 @@ import streamlit as st
 # Konfigurasi halaman
 st.set_page_config(page_title="CHiQ | Home", page_icon="🧪")
 
-# Header
+# tampilkan logo
 st.image("logo.png", width=150)
+
+# Header
 st.title("Yo, welcome to CHIQ! 😎")
 st.subheader("Chemistry Interactive Quiz")
 
