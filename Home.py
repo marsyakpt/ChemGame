@@ -3,15 +3,23 @@ import streamlit as st
 # Konfigurasi halaman
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 
-# Tampilkan logo di atas judul utama
-st.image("logo.png.png", width=1000)
+# ===== LOGO DI SIDEBAR (PALING ATAS) =====
+with st.sidebar:
+    st.image("logo.png.png", width=120)  # Logo di sidebar atas
+    # Bisa tambahkan menu di bawah ini kalau ada
+    # st.sidebar.page_link("pages/materi.py", label="📘 Materi Kimia")
+    # st.sidebar.page_link("pages/quiz.py", label="🧪 Kuis Kimia")
 
-# Sedikit jarak (rapat) antara logo dan judul
+# ===== LOGO DI HALAMAN UTAMA =====
+st.image("logo.png.png", width=500)
+
+# Perkecil jarak ke judul
 st.markdown("<div style='margin-top: -10px'></div>", unsafe_allow_html=True)
 
 # Header utama
 st.title("Yo, welcome to CHIQ! 😎")
 st.subheader("Chemistry Interactive Quiz")
+
 
 
 # Narasi pembuka
