@@ -254,7 +254,7 @@ elif st.session_state.slide_anorganik == "game":
         warna_bg = ["#222831", "#30475E", "#3A3B3C", "#393E46", "#31363F"]  
         warna_teks = ["#FFD369", "#F8B400", "#FF6B6B", "#4DD4AC", "#00ADB5"]
         
-        sorted_leaderboard = sorted(st.session_state.leaderboard, key=lambda x: x["skor"], reverse=True)[:5]
+        sorted_leaderboard = sorted(st.session_state.leaderboard_anorganik, key=lambda x: x["skor"], reverse=True)
         
         for i, entry in enumerate(sorted_leaderboard):
             nama = entry['nama']
