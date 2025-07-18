@@ -5,7 +5,7 @@ st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 
 # ===== LOGO DI SIDEBAR (PALING ATAS) =====
 with st.sidebar:
-    st.sidebar.image("logo.png.2.png", use_column_width=True)  # Logo di sidebar atas
+    st.sidebar.image("logo.png.2.png", width=120)  # Logo di sidebar atas
     # Bisa tambahkan menu di bawah ini kalau ada
     # st.sidebar.page_link("pages/materi.py", label="📘 Materi Kimia")
     # st.sidebar.page_link("pages/quiz.py", label="🧪 Kuis Kimia")
