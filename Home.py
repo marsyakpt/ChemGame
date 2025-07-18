@@ -7,6 +7,8 @@ st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 with st.sidebar:
     st.image("logo.png.2.png", use_container_width=True)  # Logo di sidebar atas
     # Bisa tambahkan menu di bawah ini kalau ada
+    # navigasi menu
+    selected=st.radio("Menu", ["Home", "Kimia Anorganik", "Kimia Orhganik"])
     # st.sidebar.page_link("pages/materi.py", label="📘 Materi Kimia")
     # st.sidebar.page_link("pages/quiz.py", label="🧪 Kuis Kimia")
 
