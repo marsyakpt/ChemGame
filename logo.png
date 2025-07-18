@@ -1,0 +1,5 @@
+cd path-ke-folder/ChemGame
+git add logo.png
+git commit -m "Add logo image"
+git push origin main
+
