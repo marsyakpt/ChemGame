@@ -1,10 +1,17 @@
+import streamlit as st  # Wajib ada di baris paling atas!
+
+# Konfigurasi halaman
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 
-# Sidebar berisi logo + teks utama
-with st.sidebar:
-    st.image("logo.png.png", width=120)
-    st.markdown("### Yo, welcome to CHIQ! 😎")
-    st.markdown("Chemistry Interactive Quiz")
+# Sidebar (kalau kamu mau logo dan teks di samping)
+st.sidebar.image("logo.png", width=120)
+st.sidebar.markdown("### CHIQ Game")
+st.sidebar.markdown("Interaktif. Estetik. Seru!")
+
+# Halaman utama
+st.title("Yo, welcome to CHIQ! 😎")
+st.subheader("Chemistry Interactive Quiz")
+
 
 # Narasi pembuka
 st.markdown("""
