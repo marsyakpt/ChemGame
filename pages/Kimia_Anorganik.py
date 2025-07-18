@@ -106,7 +106,7 @@ elif st.session_state.slide_anorganik == "materi":
 
             1) Klasifikasi Ion Berdasarkan Muatan
             
-            #### • Kation (Ion Positif)
+             • Kation (Ion Positif)
             Terbentuk dari unsur logam atau gugus yang kehilangan elektron.  
             Contoh:
             
@@ -118,7 +118,7 @@ elif st.session_state.slide_anorganik == "materi":
             
             ---
             
-            #### • Anion (Ion Negatif)
+             • Anion (Ion Negatif)
             Terbentuk dari unsur non-logam atau gugus yang menerima elektron.  
             Contoh:
             
