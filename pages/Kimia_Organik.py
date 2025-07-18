@@ -97,7 +97,7 @@ elif st.session_state.slide_organik == "materi":
             - Aromatik (cincin benzena): biasa di pewangi
 
             Pengujian Kualitatif:
-            Dengan air brom (Br₂ dalam CCl₄)
+            -a. Dengan air brom (Br₂ dalam CCl₄)
                -  Alkena (tak jenuh): larutan brom hilang warnanya (dekolorisasi)
                -  Alkana & aromatik: tidak bereaksi (tetap berwarna coklat)
 
