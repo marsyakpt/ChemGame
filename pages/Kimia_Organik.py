@@ -129,24 +129,26 @@ elif st.session_state.slide_organik == "materi":
             """)
 
         elif topik == "aldehid_keton":
-                st.markdown("## 🍋 Aldehid & Keton")
-                st.markdown("""
-                Gugus karbonil (C=O) jadi ciri khas mereka: **aldehid di ujung**, **keton di tengah**.  
-                Dipakai di parfum, pelarut, dan reaksi metabolik.
-            
-                **Contoh:**
-                - Formaldehid (pengawet)  
-                - Aseton (penghapus kuteks!)
-            
-                ```text
-                - a. Uji Aldehid
-                  • Uji Tollens : Aldehida + AgNO₃ amoniakal → cermin perak
-                  • Uji Fehling : Aldehida + larutan Fehling → endapan merah bata (Cu₂O)
-            
-                - b. Uji Keton
-                  • Uji 2,4-DNP : menghasilkan endapan kuning/oranye
-                ```
-            🧠 *Fun fact:* Aroma permen sintetis bisa berasal dari senyawa keton 🍬
+    st.markdown("## 🍋 Aldehid & Keton")
+    st.markdown("""
+    Gugus karbonil (C=O) jadi ciri khas mereka: **aldehid di ujung**, **keton di tengah**.  
+    Dipakai di parfum, pelarut, dan reaksi metabolik.
+
+    **Contoh:**
+    - Formaldehid (pengawet)  
+    - Aseton (penghapus kuteks!)
+    """)
+
+    st.code("""
+- a. Uji Aldehid
+  • Uji Tollens : Aldehida + AgNO₃ amoniakal → cermin perak
+  • Uji Fehling : Aldehida + larutan Fehling → endapan merah bata (Cu₂O)
+
+- b. Uji Keton
+  • Uji 2,4-DNP : menghasilkan endapan kuning/oranye
+    """, language="text")
+
+    st.markdown("*🧠 Fun fact:* Aroma permen sintetis bisa berasal dari senyawa keton 🍬")
             """)
 
         elif topik == "karboksilat":
