@@ -97,9 +97,7 @@ elif st.session_state.slide_organik == "materi":
             - Aromatik (cincin benzena): biasa di pewangi
 
             Pengujian Kualitatif:
-            -	Uji Molisch   : alfa-naftol + H2SO4 -> Menghasilkan cincin ungu di batas 
-            -	Uji Benedict  : benedict + gula reduksi -> endapan merah bata
-            -	Uji Iodium    : iodin + amilum -> warna biru tua
+            -	
 
 
             🧠 *Fun fact:* Benzena itu aromatik yang literally... punya aroma 😆
@@ -116,6 +114,17 @@ elif st.session_state.slide_organik == "materi":
             - Fenol (desinfektan)  
             - Dietil eter (anestesi)
 
+            Pengujian Kualitatif:
+            a. Uji Alkohol
+                Uji Lucas: Alkohol + reagen Lucas (ZnCl₂ + HCl pekat)
+                - Alkohol tersier  : keruh cepat
+                - Alkohol sekunder : keruh lambat
+                - Alkohol primer   : tidak keruh
+            b. Uji Fenol
+                Dengan FeCl₃       : Larutan berubah warna ungu, biru, atau hijau.
+
+
+
             🧠 *Fun fact:* Alkohol = bahan parfum yang aromanya nempel di baju berjam-jam!
             """)
 
@@ -128,6 +137,15 @@ elif st.session_state.slide_organik == "materi":
             Contoh:
             - Formaldehid (pengawet)  
             - Aseton (penghapus kuteks!)
+
+            Pengujian Kualitatif:
+            a. Uji Aldehid
+                - Uji Tollens  : Aldehida + AgNO₃ amoniakal → cermin perak.
+                - Uji Fehling  : Aldehida + larutan Fehling → endapan merah bata (Cu₂O).
+            b. Uji Keton:
+                - Uji 2,4-DNP  : akan menghasilkan endapan kuning/oranye
+
+
 
             🧠 *Fun fact:* Aroma permen sintetis bisa berasal dari senyawa keton 🍬
             """)
@@ -142,6 +160,10 @@ elif st.session_state.slide_organik == "materi":
             - Asam asetat (cuka)  
             - Ester stroberi (hasil dari alkohol + asam!)
 
+            Pengujian Kulitatif:
+            - Dengan NaHCO₃: Menghasilkan gelembung CO₂.
+            
+
             🧠 *Fun fact:* Sabun wangi itu hasil reaksi ester dari bahan kimia ini 😄
             """)
 
@@ -155,6 +177,11 @@ elif st.session_state.slide_organik == "materi":
             - Metilamina (amina primer)  
             - Dopamin (neurotransmitter berbasis amina)
 
+            Pengujian Kualitatif:
+            - Dengan NaOH                  : Menghasilkan gas amonia (NH₃) berbau khas.
+            - Dengan benzensulfonilklorida : Menghasilkan cairan yang tidak larut
+            
+
             🧠 *Fun fact:* Tanpa amina, kamu gak bisa mikir—karena dopamin = amina!
             """)
 
@@ -165,6 +192,11 @@ elif st.session_state.slide_organik == "materi":
             Lemak padat (mentega), minyak cair (zaitun), tapi sama-sama organik.
 
             Reaksi saponifikasi? Yup, itu cara bikin sabun dari lemak + basa.
+
+            Pengujian Kualitatif:
+            - Dengan NaOH   : Menghasilkan busa
+            - Dengan NaHCO3 : Menghasilkan busa
+
 
             🧠 *Fun fact:* Sabun mandi kamu berasal dari reaksi lemak yang disulap jadi ester bersih 🧼
             """)
@@ -180,6 +212,13 @@ elif st.session_state.slide_organik == "materi":
             - Sukrosa (gula dapur)  
             - Selulosa (dinding tumbuhan)
 
+            Pengujian Kualitatif:
+            - Uji Molisch  : alfa-naftol + H2SO4 -> Menghasilkan cincin ungu di batas
+            - Uji Benedict : benedict + gula reduksi -> endapan merah bata
+            - Uji Iodium   : iodin + amilum -> warna biru tua
+
+            
+
             🧠 *Fun fact:* Gula bisa karamelisasi dan munculin aroma roti yang super bikin lapar 😋
             """)
 
@@ -192,6 +231,12 @@ elif st.session_state.slide_organik == "materi":
             - Hemoglobin: angkut oksigen  
             - Kolagen: bikin kulit elastis  
             - Insulin: regulasi gula
+
+            Pengujian Kualitatif:
+            - Uji Biuret       : Protein + Cu2+ -> warna ungu
+            - Uji Xantoproteat : Aromatik + asam nitrat -> warna kuning
+            - Uji Millon       : Fenol + Millon -> warna merah
+
 
             🧠 *Fun fact:* Telur yang berubah putih saat dimasak adalah protein yang berubah bentuk (denaturasi)!
             """)
