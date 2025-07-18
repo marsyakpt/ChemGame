@@ -137,7 +137,6 @@ elif st.session_state.slide_organik == "materi":
             Contoh:
             - Formaldehid (pengawet)  
             - Aseton (penghapus kuteks!)
-            """)
         
             Pegujian Kualitatif:
         - a. Uji Aldehid
@@ -148,7 +147,7 @@ elif st.session_state.slide_organik == "materi":
           • Uji 2,4-DNP : menghasilkan endapan kuning/oranye
             
 
-    st.markdown("*🧠 Fun fact:* Aroma permen sintetis bisa berasal dari senyawa keton 🍬")
+        🧠 Fun fact:* Aroma permen sintetis bisa berasal dari senyawa keton 🍬")
             """)
 
         elif topik == "karboksilat":
