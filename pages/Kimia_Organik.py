@@ -150,24 +150,39 @@ elif st.session_state.slide_organik == "materi":
         elif topik == "aldehid_keton":
             st.markdown("## 🍋 Aldehid & Keton")
             st.markdown("""
-            Gugus karbonil (C=O) jadi ciri khas mereka: **aldehid di ujung**, **keton di tengah**.  
-            Dipakai di parfum, pelarut, dan reaksi metabolik.
-        
-            Contoh:
-            - Formaldehid (pengawet)  
-            - Aseton (penghapus kuteks!)
-        
-            Pegujian Kualitatif:
-        - a. Uji Aldehid
-           • Uji Tollens : Aldehida + AgNO₃ amoniakal → cermin perak
-           • Uji Fehling : Aldehida + larutan Fehling → endapan merah bata (Cu₂O)
-        
-        - b. Uji Keton
-           • Uji 2,4-DNP : menghasilkan endapan kuning/oranye
+            Aldehid dan keton punya gugus **karbonil** (`C=O`) yang jadi ciri khas:
             
-
-        🧠 Fun fact:* Aroma permen sintetis bisa berasal dari senyawa keton 🍬")
+            - **Aldehid** → gugus karbonil di **ujung rantai**
+            - **Keton** → gugus karbonil di **tengah rantai**
+            
+            Biasanya ditemukan dalam **parfum**, **pengawet**, **pelarut**, sampai reaksi metabolisme tubuh.
+            
+            ---
+            
+            ### 🔬 Contoh Senyawa:
+            - **Formaldehid** → pengawet jaringan  
+            - **Aseton** → penghapus kuteks & pelarut organik
+            
+            ---
+            
+            ### 🧪 Pengujian Kualitatif
+            
+            **a. Uji Aldehid**
+            - **Uji Tollens:**  
+              Aldehid + AgNO₃ amoniakal → terbentuk **cermin perak**
+            - **Uji Fehling:**  
+              Aldehid + larutan Fehling → **endapan merah bata** (`Cu₂O`)
+            
+            **b. Uji Keton**
+            - **Uji 2,4-DNP (2,4-Dinitrofenilhidrazin):**  
+              Keton + 2,4-DNP → **endapan kuning/oranye**
+            
+            ---
+            
+            ### 💡 Fun Fact:
+            > Aroma permen sintetis 🍬 kadang berasal dari **senyawa keton** yang manis & fruity!
             """)
+
 
         elif topik == "karboksilat":
             st.markdown("## 🧂 Asam Karboksilat & Derivatnya")
