@@ -110,31 +110,42 @@ elif st.session_state.slide_organik == "materi":
             """)
 
         elif topik == "alkohol":
-            st.markdown("## 🍷 Alkohol, Fenol, Eter")
+            st.markdown("## 🍷 Alkohol, Fenol, dan Eter")
             st.markdown("""
-            Alkohol punya gugus -OH yang bikin larut air dan reaktif. Fenol lebih asam dan sering dipakai di antiseptik.  
-            Eter? Senyawa dengan dua gugus alkil di kiri-kanan oksigen—stabil dan sering jadi pelarut.
-
-            Contoh:
-            - Etanol (hand sanitizer)  
-            - Fenol (desinfektan)  
-            - Dietil eter (anestesi)
-
-            Pengujian Kualitatif:
-            - a. Uji Alkohol
-                Uji Lucas: Alkohol + reagen Lucas (ZnCl₂ + HCl pekat)
-                - Alkohol tersier  : keruh cepat
-                - Alkohol sekunder : keruh lambat
-                - Alkohol primer   : tidak keruh
-            - b. Uji Fenol
-                Dengan FeCl₃       : Larutan berubah warna ungu, biru, atau hijau.
-
-            - c. Uji Eter
-                - Uji dengan HCl pekat : Eter + HBr → alkohol + alkil bromida = terbentuk lapisan minyak (alkil) di permukaan dan tercium bau yang khas
-
-
-            🧠 *Fun fact:* Alkohol = bahan parfum yang aromanya nempel di baju berjam-jam!
+            Alkohol, fenol, dan eter adalah senyawa organik yang memiliki gugus fungsi khas:
+            
+            - **Alkohol** punya gugus `–OH`, larut dalam air, dan cukup reaktif.
+            - **Fenol** mirip alkohol tapi langsung terikat ke cincin aromatik → lebih asam, biasa dipakai untuk antiseptik.
+            - **Eter** punya dua gugus alkil di kiri-kanan atom oksigen. Stabil dan sering jadi pelarut di lab.
+            
+            ### 🔬 Contoh Senyawa:
+            - **Etanol** → dipakai di hand sanitizer  
+            - **Fenol** → digunakan sebagai disinfektan  
+            - **Dietil Eter** → pelarut & obat bius (anestesi)
+            
+            ---
+            
+            ### 🧪 Pengujian Kualitatif
+            
+            **a. Uji Alkohol (Uji Lucas)**  
+            Alkohol + Reagen Lucas (`ZnCl₂ + HCl pekat`):  
+            - Alkohol **tersier** → larutan cepat keruh  
+            - Alkohol **sekunder** → keruh lambat  
+            - Alkohol **primer** → tetap jernih
+            
+            **b. Uji Fenol (Dengan FeCl₃)**  
+            - Fenol + FeCl₃ → larutan berubah **ungu**, **biru**, atau **hijau** (tergantung strukturnya)
+            
+            **c. Uji Eter**  
+            - Reaksi dengan HBr → terbentuk **alkohol + alkil bromida**  
+            - Hasil: **terbentuk lapisan minyak** dan muncul **bau khas**
+            
+            ---
+            
+            ### 💡 Fun Fact:
+            > Alkohol dipakai dalam parfum supaya aromanya **nempel berjam-jam di baju**! ✨
             """)
+
 
         elif topik == "aldehid_keton":
             st.markdown("## 🍋 Aldehid & Keton")
