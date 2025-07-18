@@ -3,10 +3,15 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import streamlit as st
-import random
-from components import show_sidebar_logo  # impor fungsi logo
+from components import show_sidebar_logo  # impor fungsi dari file components.py
 
+# Konfigurasi halaman
 st.set_page_config(page_title="Kimia Anorganik", page_icon="⚗️")
+
+# Tampilkan logo di sidebar
+show_sidebar_logo()
+
+# Judul utama halaman
 st.title("⚗️ Kimia Anorganik")
 
 # Navigasi halaman
@@ -15,6 +20,7 @@ if "slide_anorganik" not in st.session_state:
 
 def ke_slide(nama):
     st.session_state.slide_anorganik = nama
+
 
 # ---------------------- MENU ----------------------
 if st.session_state.slide_anorganik == "menu":
