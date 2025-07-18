@@ -98,8 +98,8 @@ elif st.session_state.slide_organik == "materi":
 
             Pengujian Kualitatif:
             - Dengan air brom (Br₂ dalam CCl₄)
-                    a. Alkena (tak jenuh): larutan brom hilang warnanya (dekolorisasi)
-                    b. Alkana & aromatik: tidak bereaksi (tetap berwarna coklat)
+                   - a. Alkena (tak jenuh): larutan brom hilang warnanya (dekolorisasi)
+                   - b. Alkana & aromatik: tidak bereaksi (tetap berwarna coklat)
 
 
             🧠 *Fun fact:* Benzena itu aromatik yang literally... punya aroma 😆
