@@ -61,7 +61,7 @@ with st.sidebar:
     show_sidebar_logo()
 
 # ===== HEADER LOGO UTAMA =====
-st.image("logo.png.png", width=300)
+st.image("logo.png.2.png", width=300)
 
 # Judul & Subjudul
 st.title("Yo, welcome to CHIQ! 😎")
