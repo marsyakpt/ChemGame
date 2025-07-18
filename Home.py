@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="CHiQ | Home", page_icon="🧪")
 
 # tampilkan logo
-st.image("logo.png.png", width=150)
+st.image("logo.png.png", width=1500)
 
 # Header
 st.title("Yo, welcome to CHIQ! 😎")
