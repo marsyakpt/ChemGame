@@ -343,8 +343,22 @@ elif st.session_state.slide_organik == "game":
         )
 
         st.markdown("### 🏆 Leaderboard Sementara")
-        for i, entry in enumerate(sorted(st.session_state.leaderboard, key=lambda x: x["skor"], reverse=True)[:5]):
-            st.write(f"{i+1}. **{entry['nama']}** - {entry['skor']} poin")
+
+        emoji_medal = ["🥇", "🥈", "🥉", "🎖️", "🏅"]
+        sorted_leaderboard = sorted(st.session_state.leaderboard, key=lambda x: x["skor"], reverse=True)[:5]
+        
+        for i, entry in enumerate(sorted_leaderboard):
+            nama = entry['nama']
+            skor = entry['skor']
+            warna = ["#FFD700", "#C0C0C0", "#CD7F32", "#87CEEB", "#98FB98"][i]  # warna untuk ranking 1-5
+            st.markdown(
+                f"""
+                <div style='background-color:{warna}; padding:10px; border-radius:8px; margin-bottom:5px'>
+                    <span style='font-size:20px;'>{emoji_medal[i]} <b>{nama}</b> — {skor} poin</span>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
         col1, col2, col3 = st.columns(3)
         with col1:
