@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+from components import show_sidebar_logo  # impor fungsi logo
 
 st.set_page_config(page_title="Kimia Anorganik", page_icon="⚗️")
 st.title("⚗️ Kimia Anorganik")
