@@ -104,8 +104,7 @@ elif st.session_state.slide_anorganik == "materi":
             •	Anion: Ion bermuatan negatif (menerima elektron)
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
 
-           st.markdown("""
-            ### 1) Klasifikasi Ion Berdasarkan Muatan
+            1) Klasifikasi Ion Berdasarkan Muatan
             
             #### • Kation (Ion Positif)
             Terbentuk dari unsur logam atau gugus yang kehilangan elektron.  
@@ -128,7 +127,6 @@ elif st.session_state.slide_anorganik == "materi":
             | 1⁻        | Cl⁻, NO₃⁻, OH⁻                  | Klorida, Nitrat, Hidroksida         |
             | 2⁻        | SO₄²⁻, CO₃²⁻, S²⁻               | Sulfat, Karbonat, Sulfida           |
             | 3⁻        | PO₄³⁻                           | Fosfat                              |
-            """)
 
 
         2) Analisis Kualitatif
