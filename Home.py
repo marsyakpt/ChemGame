@@ -11,6 +11,26 @@ with st.sidebar:
     # st.sidebar.page_link("pages/materi.py", label="📘 Materi Kimia")
     # st.sidebar.page_link("pages/quiz.py", label="🧪 Kuis Kimia")
 
+# ===== BACKGROUND GRADASI GALAXY =====
+st.markdown(
+    """
+    <style>
+    [data-testid="stAppViewContainer"] {
+        background: linear-gradient(135deg, #1e1b2e, #2a2640);
+        background-attachment: fixed;
+        color: #f3f3f3;
+    }
+    [data-testid="stHeader"] {
+        background: rgba(0, 0, 0, 0);
+    }
+    h1, h2, h3, h4, h5, h6, p {
+        color: #f8f8f8;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ===== LOGO DI HALAMAN UTAMA =====
 st.image("logo.png.2.png", width=500)
 
