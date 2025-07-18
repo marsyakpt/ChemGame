@@ -99,8 +99,34 @@ elif st.session_state.slide_anorganik == "materi":
         elif topik == "uji_kualitatif":
             st.markdown("## 🧪 Uji Kualitatif Senyawa Anorganik")
             st.markdown("""
+            Ion adalah atom atau kelompok atom yang bermuatan listrik karena kehilangan atau menerima elektron. Tujuan nya untuk mengidentifikasi kation (ion positif) dan anion (ion negatif) dalam senyawa anorganik berdasarkan reaksi khas seperti pembentukan endapan, warna nyala, perubahan warna, dan pelepasan gas. Ion terdiri dari:
+            •	Kation: Ion bermuatan positif (kehilangan elektron)
+            •	Anion: Ion bermuatan negatif (menerima elektron)
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
-            | *Ion*  | *Reagen*       | *Hasil Uji*                    |
+
+           1)	Klasifikasi Ion Berdasarkan Muatan
+                •	Kation (Ion Positif)
+                    Terbentuk dari unsur logam atau gugus yang kehilangan elektron.
+                    Contoh:
+                    | *Valensi* | *Contoh Ion*               | *Nama Ion*                       |
+                    |----------:|----------------------------|----------------------------------|
+                    | 1⁺        | Na⁺, K⁺, NH₄⁺              | Natrium, Kalium, Amonium         |
+                    | 2⁺        | Ca²⁺, Mg²⁺, Fe²⁺           | Kalsium, Magnesium, Besi(II)     |
+                    | 3⁺        | Fe³⁺, Al³⁺, Cr³⁺           | Besi(III), Aluminium, Krom(III)  |
+                    
+                •	Anion (Ion Negatif)
+                    Terbentuk dari unsur non-logam atau gugus yang menerima elektron.
+                	Contoh:
+                    | *Valensi* | *Contoh Ion*                    | *Nama Ion*                          |
+                    |----------:|----------------------------------|-------------------------------------|
+                    | 1⁻        | Cl⁻, NO₃⁻, OH⁻                  | Klorida, Nitrat, Hidroksida         |
+                    | 2⁻        | SO₄²⁻, CO₃²⁻, S²⁻               | Sulfat, Karbonat, Sulfida           |
+                    | 3⁻        | PO₄³⁻                           | Fosfat                              |
+
+        2) Analisis Kualitatif
+            Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
+
+            | *Kation*  | *Reagen*       | *Hasil Uji*                    |
             |--------|----------------|--------------------------------|
             | *Ag⁺*  | HCl / Cl⁻        | Endapan putih AgCl               |
             | *Pb²⁺* | HCl              | Endapan putih PbCl₂              |
@@ -119,6 +145,15 @@ elif st.session_state.slide_anorganik == "materi":
             | *Ba²⁺* | H₂SO₄ / SO₄²⁻    | Endapan putih BaSO₄              |
             | *Ca²⁺* | Na₂CO₃           | Endapan putih CaCO₃              |
             | *NH₄⁺* | NaOH + pemanasan | Bau amonia (gas NH₃)             |
+
+
+            | *Anion*   | *Reagen Penguji*        | *Hasil Khas*                    |
+            |-----------|-------------------------|---------------------------------|
+            | *Cl⁻*     | AgNO₃                   | Endapan putih larut NH₃         |
+            | *SO₄²⁻*   | BaCl₂                   | Endapan putih tidak larut       |
+            | *CO₃²⁻*   | HCl                     | CO₂, air kapur keruh            |
+            | *NO₃⁻*    | FeSO₄ + H₂SO₄           | Cincin coklat                   |
+            | *PO₄³⁻*   | Amonium molibdat        | Endapan kuning                  |
 
             
 
