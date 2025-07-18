@@ -103,34 +103,27 @@ elif st.session_state.slide_anorganik == "materi":
             -  	Kation: Ion bermuatan positif (kehilangan elektron)
             - 	Anion: Ion bermuatan negatif (menerima elektron)
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
-
             1) Klasifikasi Ion Berdasarkan Muatan
-            
              -  Kation (Ion Positif)
             Terbentuk dari unsur logam atau gugus yang kehilangan elektron.  
             Contoh:
-            
             | Valensi   | Contoh Ion                   | Nama Ion                       |
             |-----------|----------------------------|----------------------------------|
             | 1⁺        | Na⁺, K⁺, NH₄⁺              | Natrium, Kalium, Amonium         |
             | 2⁺        | Ca²⁺, Mg²⁺, Fe²⁺           | Kalsium, Magnesium, Besi(II)     |
             | 3⁺        | Fe³⁺, Al³⁺, Cr³⁺           | Besi(III), Aluminium, Krom(III)  |
             
-            
             -  Anion (Ion Negatif)
             Terbentuk dari unsur non-logam atau gugus yang menerima elektron.  
             Contoh:
-            
             |   Valensi | Contoh Ion                       | Nama Ion                          |
             |-----------|----------------------------------|-------------------------------------|
             | 1⁻        | Cl⁻, NO₃⁻, OH⁻                  | Klorida, Nitrat, Hidroksida         |
             | 2⁻        | SO₄²⁻, CO₃²⁻, S²⁻               | Sulfat, Karbonat, Sulfida           |
             | 3⁻        | PO₄³⁻                           | Fosfat                              |
-
-
+            
         2) Analisis Kualitatif
             Ion-ion di larutan bisa bereaksi dengan pereagen tertentu, menghasilkan perubahan visual: endapan, warna, atau gas.
-
             | Kation  | Reagen         | Hasil Uji                    |
             |--------|----------------|--------------------------------|
             | Ag⁺  | HCl / Cl⁻        | Endapan putih AgCl               |
