@@ -1,26 +1,24 @@
 import streamlit as st
 
-st.set_page_config(page_title="Tentang Aplikasi", page_icon="🧑‍🔬")
+st.set_page_config(page_title="Tentang CHiQ", page_icon="📌")
 
-st.title("🧪 Tentang Aplikasi CHiQ")
-st.markdown("Web ini dikembangkan untuk membuat pembelajaran kimia lebih fun untuk dipelajari!")
-
-st.markdown("---")
-st.header("👩‍💻 Tim Pengembang")
+st.title("📌 Tentang Aplikasi CHiQ")
 st.markdown("""
-- **Fathia Arifahanum M Nur** — 2460368
-- **Marsya Kartika Putri** — 2460412  
-- **Nuri Septrianti** — 2460475  
-- **Terrie Aulia Hannifa** — 2460526
+CHiQ adalah aplikasi kuis kimia interaktif yang dibangun untuk membuat pembelajaran jadi fun, visual, dan anti monoton 🎉
+
+### 👨‍🔬 Tim Pengembang:
+- Marsya — Desainer edukasi & storyteller CHiQ
+- Dafa — Leader backend dan leaderboard
+- Tasya — Master kurasi soal & penjelasan kimia
 """)
 
 st.markdown("---")
-st.header("📬 Kotak Saran & Masukan")
-saran = st.text_area("Tulis saran atau ide kamu untuk pengembangan CHiQ")
+st.header("💬 Kotak Saran")
+saran = st.text_area("Tulis ide atau harapan kamu buat CHiQ")
 
 if st.button("Kirim Saran"):
-    if saran.strip() != "":
-        st.success("Terima kasih atas masukannya! 💌")
-        # Bisa tambahkan logika simpan ke Sheets atau file
+    if saran.strip():
+        st.success("Terima kasih! Saran kamu sudah terkirim 💌")
     else:
-        st.warning("Isi dulu sarannya sebelum dikirim, ya 😄")
+        st.warning("Isi dulu dong sebelum dikirim 😅")
+
