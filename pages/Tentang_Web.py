@@ -49,40 +49,38 @@ CHIQ adalah singkatan dari **Chemistry Interactive Quiz** — platform edukatif 
 ### 🎯 Latar Belakang
 Web ini dibuat untuk membantu supaya belajar kimia bisa jadi lebih fun, interaktif, dan nggak membosankan.  
 Lewat CHIQ, kamu bisa belajar dengan:
-- 📚 Materi visual & singkat
-- 🎮 Kuis seru dan menantang
+- 📚 Materi visual & singkat  
+- 🎮 Kuis seru dan menantang  
 - 🏆 Leaderboard dan skor buat ngelacak sejauh mana pemahaman kamu berkembang
 
 ---
 
 ### 💬 Kotak Saran
 Kami sangat terbuka dengan masukanmu!  
-Silakan isi form di **sidebar** ➡️
+Silakan isi form di bawah ini:
 """)
 
-# ===== FORM SARAN DI SIDEBAR =====
-st.sidebar.title("✉️ Kotak Saran")
-with st.sidebar.form(key="form_saran"):
-    nama = st.text_input("Nama kamu")
-    saran = st.text_area("Masukkan saran/kritik kamu di sini")
+# ===== FORM SARAN DI HALAMAN UTAMA =====
+with st.form(key="form_saran"):
+    nama = st.text_input("🧪 Nama kamu (opsional)")
+    saran = st.text_area("💡 Masukkan saran/kritik kamu di sini")
     kirim = st.form_submit_button("Kirim Saran")
 
     if kirim:
         if nama and saran:
-            # Link formResponse dari Google Form kamu
             form_url = "https://docs.google.com/forms/d/e/1FAIpQLSclXEvPTa6hOHn8Ybfr7PEMQs3Ddw8mtrvV3emYUPAa-5G9UA/formResponse"
-
-            # Gunakan entry yang sesuai dari inspect element
             form_data = {
                 "entry.2005620554": nama,
                 "entry.1045781291": saran
             }
 
-            response = requests.post(form_url, data=form_data)
-
-            if response.status_code == 200:
-                st.sidebar.success("🎉 Terima kasih atas sarannya!")
-            else:
-                st.sidebar.warning("⚠️ Saran terkirim, tapi ada masalah dari Google.")
+            try:
+                response = requests.post(form_url, data=form_data)
+                if response.status_code in [200, 302]:
+                    st.success("🎉 Terima kasih atas sarannya!")
+                else:
+                    st.warning("⚠️ Saran sudah dikirim, tapi Google Form tidak merespon dengan baik.")
+            except Exception as e:
+                st.error(f"🚨 Gagal mengirim saran: {e}")
         else:
-            st.sidebar.warning("Isi nama dan saran dulu ya sebelum dikirim.")
+            st.warning("⚠️ Isi nama dan saran dulu ya sebelum dikirim.")
