@@ -7,9 +7,10 @@ st.markdown("""
 CHiQ adalah aplikasi kuis kimia interaktif yang dibangun untuk membuat pembelajaran jadi fun, visual, dan anti monoton 🎉
 
 ### 👨‍🔬 Tim Pengembang:
-- Marsya — Desainer edukasi & storyteller CHiQ
-- Dafa — Leader backend dan leaderboard
-- Tasya — Master kurasi soal & penjelasan kimia
+- Fathia Arifahanum M Nur 2460368
+- Marsya Kartika Putri — 2460412
+- Nuri Septrianti — 2460475
+- Terrie Aulia hannifa — 2460526
 """)
 
 st.markdown("---")
