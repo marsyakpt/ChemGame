@@ -35,7 +35,7 @@ if st.session_state.slide_organik == "menu":
     - Senyawa ester punya aroma manis, cocok banget dipakai buat parfum dan pewangi  
     - Karbohidrat & protein adalah molekul kompleks yang jadi sumber energi & pembentuk sel tubuh
 
-   Setiap senyawa punya cerita unik, dan CHiQ bantu kamu mengenalinya dengan pendekatan yang fun dan masuk akal 😄
+   Setiap senyawa punya cerita unik, dan CHIQ bantu kamu mengenalinya dengan pendekatan yang fun dan masuk akal 😄
     """)
 
     st.markdown("### 🎯 Jadi kamu mau mulai dari mana nih?")
@@ -70,7 +70,7 @@ elif st.session_state.slide_organik == "materi":
         Kamu bebas pilih jalur eksplorasimu.  
         Mau mulai dari yang simpel kayak hidrokarbon, atau langsung loncat ke senyawa yang bikin mie instan gurih?
 
-        🎓 *Belajar di CHiQ gak harus urut—pilih topik yang paling bikin kamu kepo duluan, dan biarkan rasa penasaranmu nuntun ke insight kimia yang gak terduga!* ⚗️✨
+        🎓 *Belajar itu gak harus urut—pilih topik yang paling bikin kamu kepo duluan, dan biarkan rasa penasaranmu nuntun ke insight kimia yang gak terduga!* ⚗️✨
         """)
 
         st.markdown("### 📚 Pilih Topik Materimu 📚")
