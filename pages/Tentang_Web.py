@@ -61,13 +61,27 @@ Silakan isi form di bawah:
 
 """)
 
-with st.form("form_saran"):
+with st.sidebar.form(key="form_saran"):
     nama = st.text_input("Nama kamu")
     saran = st.text_area("Masukkan saran/kritik kamu di sini")
     kirim = st.form_submit_button("Kirim Saran")
 
     if kirim:
         if nama and saran:
-            st.success("🎉 Terima kasih atas sarannya!")
+            # Link formResponse kamu
+            form_url = "https://docs.google.com/forms/d/e/1FAIpQLSclXEvPTa6hOHn8Ybfr7PEMQs3Ddw8mtrvV3emYUPAa-5G9UA/formResponse"
+
+            # Kirim data ke form pakai key entry yang sesuai
+            form_data = {
+                "entry.2005620554": nama,
+                "entry.1045781291": saran
+            }
+
+            response = requests.post(form_url, data=form_data)
+
+            if response.status_code == 200:
+                st.success("🎉 Terima kasih atas sarannya!")
+            else:
+                st.warning("⚠️ Saran terkirim, tapi Google tidak membalas respons (status selain 200).")
         else:
-            st.warning("Mohon isi nama dan saran terlebih dahulu.")
+            st.warning("Isi nama dan saran dulu ya sebelum dikirim.")
