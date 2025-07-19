@@ -55,6 +55,20 @@ Lewat CHIQ, kamu bisa belajar dengan:
 
 ---
 
+st.markdown("---")
+st.subheader("👩‍🔬 Tim Pengembang CHIQ")
+
+st.markdown("""
+Berikut adalah tim di balik web CHIQ 🎉:
+
+- **Fathia Arifahanum M Nur** — 2460368  
+- **Marsya Kartika Putri** — 2460412  
+- **Nuri Septrianti** — 2460475  
+- **Terrie Aulia Hannifa** — 2460526  
+""")
+
+---
+
 ### 💬 Kotak Saran
 Kami sangat terbuka dengan masukanmu!  
 Klik tombol di bawah untuk memberi saran langsung lewat Google Form resmi kami ⬇️
