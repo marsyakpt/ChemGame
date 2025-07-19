@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 # Konfigurasi halaman
 st.set_page_config(page_title="Tentang Web", page_icon="📌")
@@ -37,7 +38,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ===== ISI HALAMAN =====
+# ===== ISI HALAMAN UTAMA =====
 st.title("📌 Tentang Web Ini")
 st.markdown("""
 ### 👩‍🔬 Apa itu CHIQ?
@@ -55,12 +56,12 @@ Lewat CHIQ, kamu bisa belajar dengan:
 ---
 
 ### 💬 Kotak Saran
-
 Kami sangat terbuka dengan masukanmu!  
-Silakan isi form di bawah:
-
+Silakan isi form di **sidebar** ➡️
 """)
 
+# ===== FORM SARAN DI SIDEBAR =====
+st.sidebar.title("✉️ Kotak Saran")
 with st.sidebar.form(key="form_saran"):
     nama = st.text_input("Nama kamu")
     saran = st.text_area("Masukkan saran/kritik kamu di sini")
@@ -68,10 +69,10 @@ with st.sidebar.form(key="form_saran"):
 
     if kirim:
         if nama and saran:
-            # Link formResponse kamu
+            # Link formResponse dari Google Form kamu
             form_url = "https://docs.google.com/forms/d/e/1FAIpQLSclXEvPTa6hOHn8Ybfr7PEMQs3Ddw8mtrvV3emYUPAa-5G9UA/formResponse"
 
-            # Kirim data ke form pakai key entry yang sesuai
+            # Gunakan entry yang sesuai dari inspect element
             form_data = {
                 "entry.2005620554": nama,
                 "entry.1045781291": saran
@@ -80,8 +81,8 @@ with st.sidebar.form(key="form_saran"):
             response = requests.post(form_url, data=form_data)
 
             if response.status_code == 200:
-                st.success("🎉 Terima kasih atas sarannya!")
+                st.sidebar.success("🎉 Terima kasih atas sarannya!")
             else:
-                st.warning("⚠️ Saran terkirim, tapi Google tidak membalas respons (status selain 200).")
+                st.sidebar.warning("⚠️ Saran terkirim, tapi ada masalah dari Google.")
         else:
-            st.warning("Isi nama dan saran dulu ya sebelum dikirim.")
+            st.sidebar.warning("Isi nama dan saran dulu ya sebelum dikirim.")
