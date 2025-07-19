@@ -78,8 +78,8 @@ Di CHiQ kamu bisa:
 """)
 
 st.markdown("### 🔍 Pilih topik awal kamu:")
-st.page_link("pages/Kimia_Organik.py", label="📘 Kimia Organik", icon="📘")
-st.page_link("pages/Kimia_Anorganik.py", label="🧪 Kimia Anorganik", icon="🧪")
+st.page_link("pages/Kimia_Organik.py", label="Kimia Organik", icon="📘")
+st.page_link("pages/Kimia_Anorganik.py", label="Kimia Anorganik", icon="🧪")
 
 st.markdown("---")
 st.markdown("### 💡 Fun Fact Kimia!")
