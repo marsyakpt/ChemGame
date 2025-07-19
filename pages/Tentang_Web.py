@@ -57,7 +57,6 @@ Lewat CHIQ, kamu bisa belajar dengan:
 
 st.markdown("---")
 st.subheader("👩‍🔬 Tim Pengembang CHIQ")
-
 st.markdown("""
 Berikut adalah tim di balik web CHIQ 🎉:
 
@@ -67,6 +66,7 @@ Berikut adalah tim di balik web CHIQ 🎉:
 - **Terrie Aulia Hannifa** — 2460526  
 """)
 
+st.markdown("---")
 ---
 
 ### 💬 Kotak Saran
