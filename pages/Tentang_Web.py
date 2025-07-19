@@ -59,6 +59,6 @@ Lewat CHIQ, kamu bisa belajar dengan:
 Kami sangat terbuka dengan masukanmu!  
 Klik tombol di bawah untuk memberi saran langsung lewat Google Form resmi kami ⬇️
 """)
-form_link = "hhttps://forms.gle/FJAQ17XoSJ5QeNy97"  
+form_link = "https://forms.gle/N5byRH4xtgaia9gt6"  
 st.markdown(f"[📝 Isi Saran di Google Form]({form_link})", unsafe_allow_html=True)
 
