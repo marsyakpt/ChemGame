@@ -1,5 +1,4 @@
 import streamlit as st
-import requests
 
 # Konfigurasi halaman
 st.set_page_config(page_title="Tentang Web", page_icon="📌")
@@ -40,6 +39,7 @@ st.markdown(
 
 # ===== ISI HALAMAN UTAMA =====
 st.title("📌 Tentang Web Ini")
+
 st.markdown("""
 ### 👩‍🔬 Apa itu CHIQ?
 CHIQ adalah singkatan dari **Chemistry Interactive Quiz** — platform edukatif berbasis web yang menyajikan **materi kimia ringkas dan kuis interaktif** dengan tampilan menarik.
@@ -52,13 +52,13 @@ Lewat CHIQ, kamu bisa belajar dengan:
 - 📚 Materi visual & singkat  
 - 🎮 Kuis seru dan menantang  
 - 🏆 Leaderboard dan skor buat ngelacak sejauh mana pemahaman kamu berkembang
+""")
 
----
-
+# ===== TIM PENGEMBANG =====
 st.markdown("---")
-st.subheader("👩‍🔬 Tim Pengembang CHIQ")
+st.subheader("👩‍🔬 Tim Pengembang CHiQ")
 st.markdown("""
-Berikut adalah tim di balik web CHIQ 🎉:
+Berikut adalah tim di balik web CHiQ 🎉:
 
 - **Fathia Arifahanum M Nur** — 2460368  
 - **Marsya Kartika Putri** — 2460412  
@@ -66,13 +66,13 @@ Berikut adalah tim di balik web CHIQ 🎉:
 - **Terrie Aulia Hannifa** — 2460526  
 """)
 
+# ===== KOTAK SARAN =====
 st.markdown("---")
----
-
-### 💬 Kotak Saran
+st.subheader("💬 Kotak Saran")
+st.markdown("""
 Kami sangat terbuka dengan masukanmu!  
 Klik tombol di bawah untuk memberi saran langsung lewat Google Form resmi kami ⬇️
 """)
-form_link = "https://forms.gle/N5byRH4xtgaia9gt6"  
-st.markdown(f"[📝 Isi Saran di Google Form]({form_link})", unsafe_allow_html=True)
 
+form_link = "https://forms.gle/N5byRH4xtgaia9gt6"
+st.markdown(f"[📝 Isi Saran di Google Form]({form_link})", unsafe_allow_html=True)
