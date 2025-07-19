@@ -57,30 +57,8 @@ Lewat CHIQ, kamu bisa belajar dengan:
 
 ### 💬 Kotak Saran
 Kami sangat terbuka dengan masukanmu!  
-Silakan isi form di bawah ini:
+Klik tombol di bawah untuk memberi saran langsung lewat Google Form resmi kami ⬇️
 """)
+form_link = "hhttps://forms.gle/FJAQ17XoSJ5QeNy97"  
+st.markdown(f"[📝 Isi Saran di Google Form]({form_link})", unsafe_allow_html=True)
 
-# ===== FORM SARAN DI HALAMAN UTAMA =====
-with st.form(key="form_saran"):
-    nama = st.text_input("🧪 Nama kamu (opsional)")
-    saran = st.text_area("💡 Masukkan saran/kritik kamu di sini")
-    kirim = st.form_submit_button("Kirim Saran")
-
-    if kirim:
-        if nama and saran:
-            form_url = "https://docs.google.com/forms/d/e/1FAIpQLSclXEvPTa6hOHn8Ybfr7PEMQs3Ddw8mtrvV3emYUPAa-5G9UA/formResponse"
-            form_data = {
-                "entry.2005620554": nama,
-                "entry.1045781291": saran
-            }
-
-            try:
-                response = requests.post(form_url, data=form_data)
-                if response.status_code in [200, 302]:
-                    st.success("🎉 Terima kasih atas sarannya!")
-                else:
-                    st.warning("⚠️ Saran sudah dikirim, tapi Google Form tidak merespon dengan baik.")
-            except Exception as e:
-                st.error(f"🚨 Gagal mengirim saran: {e}")
-        else:
-            st.warning("⚠️ Isi nama dan saran dulu ya sebelum dikirim.")
