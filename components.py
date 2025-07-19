@@ -1,24 +1,24 @@
 import streamlit as st
 
 def show_sidebar_logo():
-    with st.sidebar:
-        st.image("logo.png.2.png", use_container_width=True)
+    st.image("logo.png.2.png", use_container_width=True)
 
 def sidebar_tentang_web():
-    st.header("📌 Tentang Web")
+    st.subheader("Tentang Web")
     st.markdown("""
-    **CHIQ (Chemistry Interactive Quiz)** adalah platform edukasi kimia berbasis kuis interaktif yang dikembangkan oleh **Marsya Kartika Putri**, mahasiswa Politeknik AKA Bogor jurusan Analisis Kimia.
+    **CHIQ - Chemical Interactive Quiz**  
+    Aplikasi edukatif ini dibuat oleh **Marsya Kartika Putri** sebagai media interaktif belajar Kimia SMA/K.  
+    Tujuannya adalah membuat belajar kimia lebih menyenangkan melalui kuis dan materi visual.
 
-    Tujuan utama web ini adalah membuat pembelajaran kimia lebih seru dan mudah dipahami 💡.
+    Dibuat dengan ❤️ menggunakan **Python + Streamlit**.
     """)
 
-    st.markdown("---")
-    st.markdown("### ✉️ Kirim Saran")
+    st.markdown("### ✉️ Kotak Saran")
 
-    with st.form("form_saran"):
+    with st.form("saran_form"):
         nama = st.text_input("Nama (opsional)")
-        pesan = st.text_area("Saran / Masukan kamu")
-        submit = st.form_submit_button("Kirim")
+        saran = st.text_area("Masukan / Saran")
+        submitted = st.form_submit_button("Kirim")
 
-        if submit:
-            st.success("Terima kasih! Saranmu sudah terkirim 🤗 (simulasi)")
+        if submitted:
+            st.success("Terima kasih atas sarannya! 🙏 (Simulasi kirim)")
