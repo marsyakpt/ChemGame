@@ -56,9 +56,9 @@ Lewat CHIQ, kamu bisa belajar dengan:
 
 # ===== TIM PENGEMBANG =====
 st.markdown("---")
-st.subheader("👩‍🔬 Tim Pengembang CHiQ")
+st.subheader("👩‍🔬 Tim Pengembang CHIQ")
 st.markdown("""
-Berikut adalah tim di balik web CHiQ 🎉:
+Berikut adalah tim di balik web CHIQ 🎉:
 
 - **Fathia Arifahanum M Nur** — 2460368  
 - **Marsya Kartika Putri** — 2460412  
