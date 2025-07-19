@@ -43,7 +43,7 @@ if st.session_state.slide_organik == "menu":
     - 📖 Pelajari dulu semua jenis senyawa dan karakteristiknya  
     - 🎮 Atau langsung uji insting karbon-mu di kuis organik yang gak bikin ngantuk!
 
-   🧠 CHiQ percaya: belajar itu bukan soal cepat atau lambat—tapi soal nyantol di kepala dengan gaya yang relatable ✨
+   🧠 CHIQ percaya: belajar itu bukan soal cepat atau lambat—tapi soal nyantol di kepala dengan gaya yang relatable ✨
     """)
 
     st.button("📖 Materi", on_click=ke_slide, args=("materi",))
