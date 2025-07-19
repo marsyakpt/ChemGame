@@ -1,5 +1,5 @@
 import streamlit as st
-from components import show_sidebar_logo
+from components import show_sidebar_logo, sidebar_tentang_web
 
 # Konfigurasi halaman
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
@@ -55,15 +55,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ===== SIDEBAR NAVIGASI OTOMATIS =====
+# ===== SIDEBAR =====
 with st.sidebar:
-    show_sidebar_logo()
-    st.page_link("Home.py", label="🏠 Home")
-    st.page_link("pages/Kimia_Organik.py", label="🔬 Kimia Organik")
-    st.page_link("pages/Kimia_Anorganik.py", label="⚗️ Kimia Anorganik")
-    st.page_link("pages/Tentang_Web.py", label="ℹ️ Tentang Web")
-
-# ===== KONTEN HALAMAN HOME =====
+    show_sidebar_logo() 
+    
+# LANGSUNG TAMPILKAN ISI HOME
 st.image("logo.png.2.png", width=300)
 
 st.title("Yo, welcome to CHIQ! 😎")
@@ -82,8 +78,7 @@ Di CHiQ kamu bisa:
 """)
 
 st.markdown("### 🔍 Pilih topik awal kamu:")
-st.page_link("pages/Kimia_Organik.py", label="🔬 Kimia Organik")
-st.page_link("pages/Kimia_Anorganik.py", label="⚗️ Kimia Anorganik")
+# DIHAPUS: st.page_link() → diganti dengan navigasi otomatis multipage di sidebar
 
 st.markdown("---")
 st.markdown("### 💡 Fun Fact Kimia!")
