@@ -77,7 +77,7 @@ elif st.session_state.slide_anorganik == "materi":
         🔥 Api yang bicara melalui warna logam?  
         🧪 Larutan bening yang diam-diam punya reaksi mengejutkan?
 
-        💬 *Di CHIQ, setiap reaksi adalah kisah—dan kamu adalah pembaca warna, pola, dan clue-nya.* ⚡✨
+        💬 *Setiap reaksi adalah kisah—dan kamu adalah pembaca warna, pola, dan clue-nya.* ⚡✨
         """)
 
         st.markdown("### 📚 Pilih Topik Materimu 📚")
