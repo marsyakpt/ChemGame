@@ -60,7 +60,7 @@ with st.sidebar:
     show_sidebar_logo() 
     
 # LANGSUNG TAMPILKAN ISI HOME
-st.image("logo.png.2.png", width=300)
+st.image("logo.png.2.png", width=600)
 
 st.title("Yo, welcome to CHIQ! 😎")
 st.subheader("Chemistry Interactive Quiz")
