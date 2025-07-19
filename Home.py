@@ -1,5 +1,5 @@
 import streamlit as st
-from components import show_sidebar_logo
+from components import show_sidebar_logo, sidebar_tentang_web
 
 # Konfigurasi halaman
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
@@ -8,7 +8,6 @@ st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
 st.markdown(
     """
     <style>
-    /* Import font dari Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
     html, body, [class*="css"] {
@@ -56,42 +55,49 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ===== SIDEBAR LOGO =====
+# ===== SIDEBAR =====
 with st.sidebar:
+    menu = st.radio("Navigasi", ["Home", "Kimia Anorganik", "Kimia Organik", "Tentang Web"])
     show_sidebar_logo()
 
-# ===== HEADER LOGO UTAMA =====
-st.image("logo.png.2.png", width=300)
+# ===== HALAMAN BERDASARKAN MENU =====
+if menu == "Home":
+    st.image("logo.png.2.png", width=300)
 
-# Judul & Subjudul
-st.title("Yo, welcome to CHIQ! 😎")
-st.subheader("Chemistry Interactive Quiz")
+    st.title("Yo, welcome to CHIQ! 😎")
+    st.subheader("Chemistry Interactive Quiz")
 
-st.markdown("""
-Belajar kimia jadi beda—fun, interaktif, dan anti bikin pusing! 🎉  
-CHiQ hadir buat kamu yang mau belajar sambil bermain dan dapetin skor kece! 🧬🎮  
-""")
+    st.markdown("""
+    Belajar kimia jadi beda—fun, interaktif, dan anti bikin pusing! 🎉  
+    CHiQ hadir buat kamu yang mau belajar sambil bermain dan dapetin skor kece! 🧬🎮  
+    """)
 
-# Fitur-fitur
-st.markdown("""
-Di CHiQ kamu bisa:
-- 📚 Belajar materi kimia yang ringkas & estetik
-- 🎯 Main kuis interaktif dan uji pemahaman
-- 🏆 Naik peringkat di leaderboard untuk melihat sejauh mana kamu memahami materi!
-""")
+    st.markdown("""
+    Di CHiQ kamu bisa:
+    - 📚 Belajar materi kimia yang ringkas & estetik
+    - 🎯 Main kuis interaktif dan uji pemahaman
+    - 🏆 Naik peringkat di leaderboard untuk melihat sejauh mana kamu memahami materi!
+    """)
 
-# Navigasi ke topik
-st.markdown("### 🔍 Pilih topik awal kamu:")
-st.page_link("pages/Kimia_Organik.py", label="🔬 Kimia Organik")
-st.page_link("pages/Kimia_Anorganik.py", label="⚗️ Kimia Anorganik")
+    st.markdown("### 🔍 Pilih topik awal kamu:")
+    st.page_link("pages/Kimia_Organik.py", label="🔬 Kimia Organik")
+    st.page_link("pages/Kimia_Anorganik.py", label="⚗️ Kimia Anorganik")
 
-# Fun Fact
-st.markdown("---")
-st.markdown("### 💡 Fun Fact Kimia!")
-st.markdown("""
-- 🍌 **Pisang itu sedikit radioaktif!**
-- ❄️ **Air bisa membeku & mendidih sekaligus di titik triple!**
-- 💎 **Berlian dan grafit = karbon beda struktur**
-- 🌩️ **Petir bisa membentuk ozon di atmosfer**
-- 🔥 **Glow stick nyala karena reaksi kimia**
-""")
+    st.markdown("---")
+    st.markdown("### 💡 Fun Fact Kimia!")
+    st.markdown("""
+    - 🍌 **Pisang itu sedikit radioaktif!**
+    - ❄️ **Air bisa membeku & mendidih sekaligus di titik triple!**
+    - 💎 **Berlian dan grafit = karbon beda struktur**
+    - 🌩️ **Petir bisa membentuk ozon di atmosfer**
+    - 🔥 **Glow stick nyala karena reaksi kimia**
+    """)
+
+elif menu == "Kimia Anorganik":
+    st.switch_page("pages/Kimia_Anorganik.py")
+
+elif menu == "Kimia Organik":
+    st.switch_page("pages/Kimia_Organik.py")
+
+elif menu == "Tentang Web":
+    sidebar_tentang_web()
