@@ -1,5 +1,4 @@
 import streamlit as st
-from components import show_sidebar_logo, sidebar_tentang_web
 
 # Konfigurasi halaman
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
