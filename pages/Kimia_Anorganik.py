@@ -9,7 +9,11 @@ import random
 st.set_page_config(page_title="Kimia Anorganik", page_icon="⚗️")
 
 # Tampilkan logo di sidebar
-show_sidebar_logo()
+with st.sidebar:
+    st.image("https://i.ibb.co/3mvXxLz/CHIQ-logo.png", width=150)
+    st.markdown("### CHIQ")
+    st.caption("Chemistry Interactive Quiz")
+    st.markdown("---") 
 
 # Judul utama halaman
 st.title("⚗️ Kimia Anorganik")
