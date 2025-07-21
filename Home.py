@@ -56,7 +56,7 @@ st.markdown(
 
 # ===== SIDEBAR =====
 with st.sidebar:
-    st.image("https://i.ibb.co/3mvXxLz/CHIQ-logo.png", width=150)
+    st.image("https://i.ibb.co/3mvXxLz/CHIQ-logo.png.2.png", width=150)
     st.markdown("### CHIQ")
     st.caption("Chemistry Interactive Quiz")
     st.markdown("---") 
