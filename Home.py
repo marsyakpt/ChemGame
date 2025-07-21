@@ -1,5 +1,5 @@
 import streamlit as st
-from components import show_sidebar_logo  # FIXED
+from components import show_sidebar_logo, sidebar_tentang_web
 
 # Konfigurasi halaman
 st.set_page_config(page_title="CHIQ | Home", page_icon="🧪")
@@ -37,4 +37,56 @@ st.markdown(
 
     .stButton>button {
         border-radius: 8px;
-        padding:
+        padding: 0.5rem 1.5rem;
+        font-weight: 500;
+        background-color: #6c5ce7;
+        color: white;
+        border: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    .stButton>button:hover {
+        background-color: #a29bfe;
+        color: black;
+        transform: scale(1.05);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# ===== SIDEBAR =====
+with st.sidebar:
+    show_sidebar_logo() 
+    
+# LANGSUNG TAMPILKAN ISI HOME
+st.image("logo.png.2.png", width=600)
+
+st.title("Yo, welcome to CHIQ! 😎")
+st.subheader("Chemistry Interactive Quiz")
+
+st.markdown("""
+Belajar kimia jadi beda—fun, interaktif, dan anti bikin pusing! 🎉  
+CHiQ hadir buat kamu yang mau belajar sambil bermain dan dapetin skor kece! 🧬🎮  
+""")
+
+st.markdown("""
+Di CHiQ kamu bisa:
+- 📚 Belajar materi kimia yang ringkas & estetik
+- 🎯 Main kuis interaktif dan uji pemahaman
+- 🏆 Naik peringkat di leaderboard untuk melihat sejauh mana kamu memahami materi!
+""")
+
+st.markdown("### 🔍 Pilih topik awal kamu:")
+st.page_link("pages/Kimia_Organik.py", label="Kimia Organik", icon="📘")
+st.page_link("pages/Kimia_Anorganik.py", label="Kimia Anorganik", icon="🧪")
+
+st.markdown("---")
+st.markdown("### 💡 Fun Fact Kimia!")
+st.markdown("""
+- 🍌 **Pisang itu sedikit radioaktif!**
+- ❄️ **Air bisa membeku & mendidih sekaligus di titik triple!**
+- 💎 **Berlian dan grafit = karbon beda struktur**
+- 🌩️ **Petir bisa membentuk ozon di atmosfer**
+- 🔥 **Glow stick nyala karena reaksi kimia**
+""") 
