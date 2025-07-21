@@ -3,7 +3,11 @@ import random
 
 st.set_page_config(page_title="Kimia Organik", page_icon="🧪")
 
-show_sidebar_logo()  # ⬅️ panggil fungsi ini di awal
+with st.sidebar:
+    st.image("https://i.ibb.co/3mvXxLz/CHIQ-logo.png", width=150)
+    st.markdown("### CHIQ")
+    st.caption("Chemistry Interactive Quiz")
+    st.markdown("---") 
 
 st.title("🔬 Kimia Organik")
 
