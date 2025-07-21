@@ -56,7 +56,10 @@ st.markdown(
 
 # ===== SIDEBAR =====
 with st.sidebar:
-    show_sidebar_logo() 
+    st.image("https://i.ibb.co/3mvXxLz/CHIQ-logo.png", width=150)
+    st.markdown("### CHIQ")
+    st.caption("Chemistry Interactive Quiz")
+    st.markdown("---") 
     
 # LANGSUNG TAMPILKAN ISI HOME
 st.image("logo.png.2.png", width=600)
