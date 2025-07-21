@@ -4,7 +4,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import streamlit as st
 import random
-from components import show_sidebar_logo  # impor fungsi dari file components.py
 
 # Konfigurasi halaman
 st.set_page_config(page_title="Kimia Anorganik", page_icon="⚗️")
